@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://docs.chocolatey.org/en-us/create/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>DXLog</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>2.6.10</version>
+    <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Patrick Henkelmann, DC9PA</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>DXLog.net - Contest logger</title>
+    <authors>9A5K, K1LZ, K1XM, SM7IUN</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://dxlog.net/</projectUrl>
+    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
+    <!-- Here is an example using Githack -->
+    <iconUrl>http://dxlog.net/docs/images/dxlognet_log.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>https://dxlog.net/docs/index.php/Main_Page</docsUrl>
+    <mailingListUrl>https://groups.io/g/DXLog/</mailingListUrl>
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>dxlog</tags>
+    <summary>DXLog.net - Contest logger</summary>
+    <description>Welcome to the home of DXLog.net, the ham radio contest logging software by 9A5K.
+
+The software is free of charge, donated to the ham radio community by
+Krassy K1LZ and a small team donating their time and effort. </description>
+    <releaseNotes>Ver 2.6.10
+------------------------
+- Make menu option to make spectrum width changeable persistent. (K6PO)
+- Do not rebuild updater when preparing a new release to reduce false anti-virus triggers. (M1DST)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Allow exchange DC in ILQP. (SM7IUN)
+- Add ARRL EME Contest. (SM7IUN, TNX F4IEY)
+- Implement spec change for Real Time Contest "deletelog". (SM7IUN, TNX VA2WA)
+- Add ARRL School Roundup Contest. (SM7IUN, TNX VE2FK)
+- Don't show data from AirSpy if bandwidth is more than 380 KHz.  Avoids a DXLog crash. (K1XM, TNX G4MKP)
+
+Ver 2.6.9
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Add World Wide Digi DX Contest. (SM7IUN, TNX WB9SBD)
+- Fix issue with muting. (DH2WQ)
+- Improve spotting of WSJT-X decodes. (SM7IUN)
+- Update RRWW RTTY Contest with new rules. (SM7IUN)
+- Strip dashes from QSO ID in hamscore.com upload. (SM7IUN, TNX VA2WA)
+- Update 13 Colonies event. (SM7IUN)
+- Allow repeated and ignored keys in LIVESCORE_MULT. (SM7IUN)
+- Fix live score reporting of multipliers in some 60 contests. (SM7IUN)
+- Fix issue with automatic log field focus shift with simulator in SO2R. (SM7IUN, TNX N4YDU)
+- Improve recognition of mandatory fields in contest configuration panel. (SM7IUN)
+- Introduce stricter syntax check for contest configuration files during debug. (SM7IUN)
+- Fix minor issue with live score station category reporting. (SM7IUN)
+- Fix issue with hiding some exotic entities in Worked DXCC window. (SM7IUN)
+- Fix syntax errors and content consistency in some 200 contest definition files. (SM7IUN)
+- Report station location as FIXED to live score as default. (SM7IUN)
+- Fix minor inconsistency with live score mode category reporting. (SM7IUN)
+- Add Farroupilha Contest HF and VHF. (SM7IUN)
+- Add Chilean WPX Contest. (SM7IUN)
+- Fix minor inconsistency in error handling in contest configuration window. (SM7IUN)
+- Fix alignment issue with bandmap signal threshold sliders. (K6PO)
+- Add support for ICOM IC-7760. (SM7IUN)
+- Disable two dozen "old" radio drivers. (SM7IUN)
+- Fix driver for ICOM IC-905. (SM7IUN)
+- Fix dupe rule for WWFF and POTA. (SM7IUN, TNX SM0HEV)
+- Don't force radio to CW at startup. (SM7IUN, TNX G4PIQ, NN7CW)
+- Fix Cabrillo export for ARRL January, June, and September VHF Contests. (SM7IUN, TNX KK0U)
+- Disable erroneous self spotting for SAC. (SM7IUN)
+- Update standard messages for a number of sprint contests to allow ESM. (SM7IUN, TNX AG9A)
+- Improve error handling for hamscore.com. (SM7IUN)
+- Handle invalid lengths of RST field better. (SM7IUN, TNX K6PO, N6KI)
+- Don't force the radio's mode when pressing Alt-F1/F2 in digital mode. (SM7IUN, TNX DL1MGB, OE2LCM)
+- Fix serial number for multi transmitter categories in Oceania DX. (SM7IUN)
+- Fix serial number for checklog in PACC. (SM7IUN)
+- Use only four first voice memories on K4 for playback to allow bank switching. (SM7IUN, TNX N6TV)
+- Add O and D to cut number translation. (SM7IUN, TNX N6TV)
+- Add option to make spectrum width changeable. (K6PO, TNX SM5AJV)
+- Add K1USN SSO. (SM7IUN)
+
+Ver 2.6.8
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Make Summary window column order more consistent across contests. (SM7IUN)
+- Improve menu item wording in Options->Data files. (SM7IUN, TNX EA6BF)
+- Make some minor improvements to internationalization. (SM7IUN)
+- Allow self spotting in RDAC. (SM7IUN, TNX R9IR)
+- Update HA_HF_IFI and HA_VHF_IFI. (SM7IUN, TNX HA6PX)
+- Set correct transmitter for QTC send and receive. (K1XM, TNX HA3LN, N2NT)
+- Stop transmitting before sending QTCs. (K1XM)
+- Add keyboard remapping and receiver selection to QTC send. (K1XM)
+- Add focus swap (keypad *) for QTC send and receive. (K1XM)
+- Redesign infrastructure for UDP broadcast and Live Score reporting. (SM7IUN)
+- Fix issue with per band live score reporting above 50MHz. (SM7IUN)
+- Update and consolidate UI for live score reporting. Note that most live score settings will be reset. (SM7IUN)
+- Add support for Real Time Contest (hamscore.com). (SM7IUN, TNX VA2WA)
+- Enable Real Time Contest support for CWOps CWT. (SM7IUN, TNX VA2WA)
+- Redesign support for slovhf.net to use JSON. (SM7IUN)
+- Fix on time calculation in Summary file. (SM7IUN, TNX NN7CW)
+- Add URC DX RTTY Contest. (SM7IUN, TNX VE2FK)
+- Update multipliers for VE stations in NHQP. (SM7IUN)
+- Update BCC QP. (SM7IUN)
+- Don't crash if an Elecraft radio has a communications problem. (K1XM, TNX PG7M)
+- Use current time instead of last logged QSO as basis for last hour/last 10 minutes rate calculation. (SM7IUN, TNX WC1M)
+- Fix minor issue with default port in Antenna server configuration. (SM7IUN)
+- Fix click to grab exchange in digital mode. (K6PO)
+- Improve error message display for Antenna server client. (SM7IUN)
+- Make DX cluster announcement not scroll to end as installation default. (SM7IUN)
+- Improve robustness of logging of ADIF QSO via UDP (such as WSJT-X). (SM7IUN)
+- Update and rename NRRL FD to NRRL FD HF and add NRRL FD VHF (which has other rules). (SM7IUN)
+- Fix ESM for simulator. (SM7IUN, TNX RW9OW)
+- Add option for live score debug tracing. (SM7IUN)
+- Add FISTS Sprint. (SM7IUN, TNX IU3BRO)
+- Update live score contest names for a number of V/U/SHF contests. (SM7IUN)
+- Fix some stability issues with SDRPlay spectrum display. (K6PO)
+
+Ver 2.6.7
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Fix issue with CAT PTT and split operation for Kenwood TS-2000. (SM7IUN)
+- Add support for DRU-3A voice recorder and fix keyboard RIT tracking for Kenwood TS-2000. (SM7IUN)
+- Add support for DVK recording with TS-480SAT and TS-480HX. (SM7IUN)
+- Add support for VGS-1 voice recorder for Kenwood TS-590S. (SM7IUN)
+- Additional fixes for mouse scrolling in Bandmap, DX cluster announcements, and own spot windows. (K1XM, TNX EA6BF)
+- Allow two WinKeys or a WinKey and a parallel or serial key. (K1XM)
+- Show a visual warning when selecting an unassisted contest entry. (SM7IUN)
+- Update driver for Lab599 TX500, Mission RGO One, and QRP Labs. (SM7IUN)
+- Ignore option "Insert and F2 messages reserve serial number" if no $SERIAL in message. (SM7IUN, TNX SM5AJV)
+- Remove support for deprecated macro command $INS. (SM7IUN)
+- Don't include station owner prefix @ in OPON operator's list. (SM7IUN)
+- Fix scoring in IARU HF Championship. (SM7IUN, TNX KL9A)
+- Fix own zone scoring issues in BSCC, Ham Spirit, Nauryz, RRTC, and Tisza Cup. (SM7IUN)
+- Remove references to WAZ in UI and code. (SM7IUN)
+- Don't crash if network debug cannot write to the trace file. (K1XM, TNX EA5J)
+- Don't crash when scrolling the bandmap with spectrum displayed. (K1XM, TNX SM5AJV)
+- Update driver for Yaesu FTDX1200 and FTDX3000. (SM7IUN, TNX K8GB)
+- Alt-click in bandmap spectrum now changes the second VFO. (K1XM, TNX SM5AJV)
+- Update driver for Yaesu FT-891. (SM7IUN)
+- Improve support for diversity with modern ICOM radios. (SM7IUN)
+- Don't crash with bad handle reference in FrmQSO. (K1XM, TNX DK5PD)
+- Improve wording in Rate window's context menu. (SM7IUN, TNX F6UGW)
+- Correctly use PTT Vorlauf for PTT lead in the German Interface configuration panel. (SM7IUN, TNX DK1CE)
+- Add Baltic Open VUSHF contest. (SM7IUN)
+- Fix single click on data in digital decode window. (K6PO, TNX M5RIC)
+
+Ver 2.6.6
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Fix driver for ICOM IC-735 and add support for IC-718, 728, 729, 751, 761, 820, and 970. (SM7IUN)
+- Fix HQ station scoring in FOC marathon. (SM7IUN, TNX OK1RR)
+- Add support for Kenwood TS-570 and optimize some Kenwood drivers. (SM7IUN)
+- Allow up to 100 opacity in spectrum display while still making frequency markers visible. (K6PO, TNX EB5A)
+- Add log type "Casual VHF operation (Grid)". (SM7IUN, TNX E77DX)
+- Add option to Own spots window to sort spots by age. (SM7IUN)
+- Some minor improvements to Elecraft drivers. (SM7IUN)
+- Bandmap spectrum display improvements. (K6PO)
+- Fix flaw in logic for making grid mandatory in contest configuration panel. (SM7IUN)
+- Fix standard messages for Schwaben UKW. (SM7IUN)
+- Update SL-Testen. (SM7IUN)
+- Update SRR Digital Cup. (SM7IUN)
+- Update ARRL FD. (SM7IUN, TNX SP5KP)
+- Fix problem with mouse scrolling in Bandmap, DX cluster announcements, and own spot windows. (K1XM, TNX EA6BF)
+- Remove unnecessary bandmap data structure. (K1XM)
+- Remove some exceptional rules in UKEI and RSGB contests. (SM7IUN, TNX M5RIC)
+- Don't display recording message when trying to record a radio's voice memory that does not exist. (SM7IUN)
+- Improve driver robustness and make DVK playback more reliable for Yaesu FT-450D, FT-991, FTDX10, FTDX101, FT-710, FTDX1200, FT-2000, FTDX3000, FTDX5000. (SM7IUN)
+- Add support for recording with radio's DVK for Yaesu FT-991, FTDX10, FTDX101, FT-710, FTDX1200, FT-2000, FTDX3000, and FTDX5000. (SM7IUN)
+- Improve keyboard RIT for Yaesu FTDX1200, FT-2000, FTDX3000, FTDX5000, and FTDX9000. (SM7IUN)
+- Fix DVK playback on Yaesu FTDX9000. (SM7IUN)
+- Add support for single receiver SO2V on Yaesu FTDX5000. (SM7IUN)
+- Don't clear RIT when grabbing spots on unselected VFO on Elecraft K2 and Yaesu FT-2000. (SM7IUN)
+- Fix calculation error in bandmap list mode. (K1XM, TNX DK9PY, G3WW)
+- Fix problems when QTC send or receive, CW Keyboard, or Call stack are displayed on a secondary monitor. (K1XM)
+- Fix problems when floating windows are displayed on a secondary monitor. (K1XM)
+- Fix split mode operation and keyboard RIT for Mission RGO One. (SM7IUN)
+- Fix multiple issues with Thetis driver. (SM7IUN)
+- Make automatic Run/S and P switching the installation default. (SM7IUN)
+- Add support for Ten-Tec Argonaut V and VI. Completely rewrite driver for Omni VII. (SM7IUN)
+- Add support for ICOM IC-1275 and IC-78. (SM7IUN)
+- Fix CAT PTT for ELAD FDM-DUO. (SM7IUN)
+- Fix issue with alignment of log header. (SM7IUN)
+- Make formatting in Summary window user selectable. (SM7IUN, TNX MANY)
+
+Ver 2.6.5
+------------------------
+- FIX: Updater now normalises the line endings of the release notes to ensure proper display. (M1DST)
+- Update version check message. (SM7IUN)
+- FIX: Copy the updater to AppData to ensure it is not in use during updates. (M1DST)
+- Update Norwegian language option. (SM7IUN)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, SP5KP, HA3NU, and DJ5CW)
+- Add IPARC Contest. (SM7IUN, TNX DL8BH)
+- Add self spotting and free mult station QSY in M/1 for Tisza Cup. (SM7IUN, TNX SP5KP)
+- Allow going to QSO numbers larger than 99999. (SM7IUN, TNX DL6FBL)
+- Optionally display 4, 5, or 6 digits of QSO numbers. (K1XM, TNX DL6FBL)
+- Fix problem with Ctrl-F1/F2, manual mode entry, and PSK125. (SM7IUN)
+- Fix alignment of "Mode" in log heading for scaled displays. (SM7IUN)
+- Correctly identify DXCC of rover stations (with /R suffix). (SM7IUN, TNX F6FVY)
+- Refactored loading of prefill databases (M1DST)
+- Formatted the total score using a localised number format - includes refactoring (M1DST)
+- Add bonus station G*4FOC to FOC Marathon. (SM7IUN, TNX OK1RR)
+- Minor code optimization plus increased thread priority for CW message parsing and keying. (SM7IUN)
+- Clean up and refactor ICOM drivers. No functional changes. (SM7IUN)
+- Reduce CPU load of DXLog cluster client when duplicate spots are not ignored. (SM7IUN)
+- Update CVA DX with 2024 rules. (SM7IUN, TNX PP5XA)
+- Add option to use reverse sideband on CW. NB. This touched almost all CAT drivers. (SM7IUN, K0AV)
+- Fix keyboard RIT for Expert and ELAD radios and refactor drivers. (SM7IUN)
+- Fix CAT PTT for Thetis and refactor driver. (SM7IUN)
+- Don't unnecessarily update subreceiver status for FlexRadio and refactor driver. (SM7IUN)
+- Fix CW stutter problem. (K1XM)
+- Fix issue with DXLog hanging in transmit if trying to play back noexistent DVK memory in radio. (SM7IUN)
+- Never force radio to a mode when switching DXLog to a digital mode. (SM7IUN, TNX I2WIJ)
+- Allow QSO with /MM and /AM stations in EUDXC. (SM7IUN)
+- Fix CAT PTT for Kenwood TS-2000, TS-480, TS-890, and TS-990. (SM7IUN)
+- Fix keyboard RIT for Kenwood TS-890 and TS-990. (SM7IUN)
+- Refactor all Kenwood drivers. (SM7IUN)
+- Update standard messages for K1USN SST based on recommendations on contest web page. (SM7IUN)
+- Rework bandmap for better performance with large numbers of callsigns. (K1XM)
+- Add prefill database to All Asian DX Contest. (SM7IUN, TNX VE2FK)
+- Improve scrolling in DX cluster announcements and DX cluster own spots windows. (K1XM)
+- Make spots correctly dissappear/expire on SmartSDR/WaterfallBandmap. (SM7IUN, TNX G4IRN, UI3A)
+- Label spots ineligible for contest as dupes on SmartSDR/WaterfallBandmap. (SM7IUN, TNX G4IRN)
+- Add option to not send ineligible spots to SmartSDR/WaterfallBandmap. (SM7IUN, TNX UI3A)
+- Simplify own spot processing code somewhat. (SM7IUN)
+- Add font size selection for QTC send and receive windows. (K1XM, TNX UN6LN)
+
+Ver 2.6.4
+------------------------
+- Fix locking errors in number server and CW Keyer. (K1XM)
+- Show transmitted characters for MMTTY on entry window. (K1XM)
+- Add information and options to Network status window. (K1XM)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, SP5KP, HA3NU, and DJ5CW)
+- Update INQP, DEQP, and 7QP with new NEWEQP county acronyms. (SM7IUN, TNX W9PA)
+- Fix live score reporting for CBJ DX. (SM7IUN)
+- Add ability to abort other stations. (K1XM)
+- Fix persistence of SloVHF settings. (SM7IUN, TNX F1EZG)
+- Fix several issues with exotic digital modes. (SM7IUN)
+- Update BCC QP with new members. (SM7IUN)
+- Add OWNER_CALLSIGN key to ADIF export when @CALLSIGN is present in operator list. (SM7IUN)
+- Add MY_GRIDSQURE, MY_CQ_ZONE, MY_ITU_ZONE, and MY_NAME to ADIF export. (SM7IUN)
+- Add option to export minimal data ADIF (for Clublog etc.). (SM7IUN, TNX OK2ZI)
+- Drastically reduce ADIF export time (~98%) for large dxpedition logs. (SM7IUN, TNX OK2ZI)
+- Fix COMMENT field in ADIF export. (SM7IUN)
+- Add text command EXPORT for ADIF export. (SM7IUN)
+- Fix categories and QSO numbering for ARI DX. (SM7IUN, TNX M0CKE)
+- Fix issue with per-mode Cabrillo export. (SM7IUN)
+- Fix issue with changing mode of logged QSO to a digital mode. (SM7IUN)
+- Confirm that log upload to Super Check Partial is successful. (SM7IUN, TNX W9KKN)
+- Fix Cabrillo import issue. (SM7IUN, TNX K1XM)
+- Add Istra Open Contest. (SM7IUN, TNX 9A1UN)
+- Add LABRE DX Contest. (SM7IUN, TNX PP2BT)
+- Fix issue with some DXCC related contest definition keys. (SM7IUN)
+- Retire redundant contest definition key CABRILLO_OVERLAY_DISABLED. (SM7IUN)
+- Clean up some contest definition files for maintenance purposes. (SM7IUN)
+- Add completion status message when exporting to ADIF. (SM7IUN, TNX OK2ZI)
+- Add Hessen Contest KW and UKW. (SM7IUN, TNX DH2WQ)
+- Fix syntactic inconsistency with MULT#_EXCEPTION. (SM7IUN)
+- Update UN DX with 2024 rules. (SM7IUN)
+- Update EU PSK DX with 2024 rules. (SM7IUN)
+- RTTY Improvements, including "Right click in digital decoder window does ESM" (K6PO)
+
+Ver 2.6.3
+------------------------
+- We will only attempt to compile custom scripts if they are enabled (M1DST)
+- Automatically updates DXLog (if the user says OK) and restarts (M1DST)
+- New Window - Exchange info (previously a custom form) - don't forget to remove the old dll if you used it. (M1DST)
+- Allow self spotting in NMQP. (SM7IUN)
+- Allow cluster spot lifetimes of 1-30 minutes. (SM7IUN)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, SP5KP, and DJ5CW)
+- Initialize font to prevent crash in some windows. (K1XM, TNX YT6W)
+- Make several improvements to digital modes. (K6PO)
+- Allow self spotting in SP DX. (SM7IUN)
+- Fix restricting up arrow with two keyboards. (K1XM, TNX I2WIJ)
+- Update categories in MOQP. (SM7IUN)
+- Allow logging during ADIF export. (SM7IUN, TNX OK1ZI)
+- Allow self spotting in ONQP. (SM7IUN, TNX VE2FK)
+- Handle ONQP and QCQP coexistence. (SM7IUN)
+- Make numerous corrections and improvements to language support. (DH2WQ)
+- Fix "Mute during playback". (DH2WQ)
+- Add PACCdigi Contest. (SM7IUN)
+- Fix Ctrl-F1/F2 for some digital modes. (SM7IUN)
+- Fix $CLEARRIT for simulator. (SM7IUN, TNX WC1M)
+- Fix Holyland DX Cabrillo export. (SM7IUN, TNX LX1NO)
+- Add DL6RAI Memorial Contest. (SM7IUN, TNX DH2WQ)
+- Don't catch and log exceptions when debugging. (SM7IUN)
+
+Ver 2.6.2
+------------------------
+- Allow cluster spot lifetimes of 3-30 minutes. (SM7IUN)
+- Include logged on operator when logging from WSJT-X/MSHV. (SM7IUN, TNX OK2ZI)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Fix a crash when the recording messages if the audio device is not available. (K1XM, TNX WB9SBD)
+- Update some status messages for typos and inconsistencies. (SM7IUN)
+- Fix incorrect self-spot time in rate display for SO2V. (K1XM, TNX SM7IUN)
+- Fix per band QSO numbering in YU UKT Activity contest. (SM7IUN, TNX YU1LG)
+- Fix per band QSO numbering in some RSGB VHF contests. (SM7IUN)
+- Update BCC QP and add prefill database. (SM7IUN, TNX DL4VK)
+- Fix problem with entering the DIGI menu in MMTTY and MMVARI. (K6PO, TNX SP5KP)
+- Fix crash in IO read. (K1XM, TNX DK8ZZ)
+- Add thread name to crash information. (K1XM)
+- Add option to show warning when selecting station from bandmap or DXC announce windows if it is out of the band. (K1XM)
+- Allow self spotting in CQMM. (SM7IUN, TNX N1MM)
+- Add support for county line stations in MOQP. (SM7IUN, TNX KK0U)
+- Add "Escape" option for footswitch.  Behavior similar to escape key. (K1XM, TNX CT1ILT)
+
+Ver 2.6.1
+------------------------
+- Fix QSO numbering for networked SO2V. (SM7IUN, TNX EA1TL)
+- Fix unwanted truncation of exchange in check partials/N+1 windows. (SM7IUN)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, HA3LN, AD1C, F5OIH, W9KKN, and DJ5CW)
+- Fix crash in Check calls window. (SM7IUN, TNX E74AW)
+- Improve crash logging. (M1DST)
+- Set default minimum self spotting period to 10 minutes. (SM7IUN)
+- Make JT65 and MSK144 valid modes for DXpedition and casual logs. (SM7IUN)
+- Add "Goto last QSO" and "Restrict up arrow movement". (K1XM, TNX HA3LN)
+- Fix tab stops in Contest configuration panel. (SM7IUN)
+- Fix crash when closing Check N+1, Check partial, and Custom multiplier tracking. (SM7IUN, TNX M1DST)
+- Specify file to send to developers in crash message. (K1XM)
+- Fix prepopulation of address fields State, Zip, and City. (SM7IUN)
+- Add Russian YL/OM Contest. (SM7IUN)
+- Fix crash when closing serial or pipe device. (K1XM, TNX DK8ZZ)
+- Fix bandmap sizing anomaly with SO2V. (SM7IUN)
+- Add VK Shires Contest. (SM7IUN)
+- Update BCC QP and RDXC. (SM7IUN)
+- Update prefix based prefill for VE stations in CQ 160 and ARRL DX. (SM7IUN)
+- Restrict spot lifetime setting to 11-60 minutes. (SM7IUN)
+- Fix tab stops in Bandmap properties panel. (SM7IUN)
+- Fix calculation bug in DX cluster announcements window. (K1XM)
+- Fix crash when clicking on a bandmap spot. (K1XM)
+- Update DARC Easter Contest, DARC XMAS, and WAG Contest with 2024 rules. (SM7IUN, TNX DM6EE)
+- Fix crash when closing Gab, Summary, Antenna controller, and Antenna selector windows. (K1XM, TNX OH6XX)
+- Fix crash when right clicking on MMVARI window with ESM. (K1XM, TNX M5RIC)
+- Improvements to script compilation. Now warns you of errors during init. (M1DST)
+- Updated System.Net.Http to v4.3.4. (M1DST)
+- Focus radio on right-click ESM in MMVARI. (K6PO, TNX OH6XX)
+- Rework self-spot. Add SELF_SPOT_PER_RADIO. (K1XM)
+- Fix crash when resizing bandmap. (K1XM, TNX N7OR)
+- Fix live score reporting for YOTA. (SM7IUN, TNX IT9IVU)
+- Fix scoring in Stew Perry. (SM7IUN, TNX W1UE)
+- Update UA1DZ memorial with 2024 rules. (SM7IUN, TNX RM1F)
+- Update NEQP and Four QP with 2024 rules. (SM7IUN, TNX K1KI)
+- Fix live score reporting in AraucÃ¡ria VHF Contest. (SM7IUN)
+- Fix issue switching to or from RTTY mode (K6PO, TNX DL2PR)
+
+Ver 2.6.0
+------------------------
+- Migrate to .NET 4.8 runtime. (M1DST)
+- Migrate to Wix 4 installer. (M1DST)
+- Upgrade source code tree to Visual Studio 2022. (M1DST)
+- Add MIDI manager. (M1DST)
+- Improve script compilation and script manager. (M1DST)
+- Add RSGB 144/432MHz Low Power Contest. (SM7IUN, TNX G4CLA)
+- Fix problem with logging from WSJT-X with networked stations. (SM7IUN, TNX G4FAL)
+- Update HA DX. (SM7IUN)
+- Fix contest definition key FIELD_RCVD_DEFAULT_VALUE. (SM7IUN)
+- Add RT3A Sprint Memorial Contest. (SM7IUN, TNX DJ5CW)
+- Update U-QRQ-C Contest and add database. (SM7IUN, TNX DJ5CW)
+- Let S and P automations (clear call, etc.) also apply to Run when sprint logic is active. (SM7IUN, TNX AG9A)
+- Update BCQP and add database. (SM7IUN, TNX VE2FK)
+- Clean up score summary definition in some 22 contest definitions. (SM7IUN)
+- Update DXpedition ADIF export. (SM7IUN)
+- Add Casual operation HF and VHF logs with names database. (SM7IUN)
+- Fix a rare case of duplicate COMMENT keys in ADIF export. (SM7IUN)
+- Update RAC Canada Day and Canada Winter Day. (SM7IUN, TNX F6FVY)
+- Update multipliers for all UBA contests. (SM7IUN, TNX ON9TT)
+- Ignore X-QSO when determining on/off time and largest QRB (ODX). (SM7IUN)
+- Update QSO notes to include QSO number and use ISO-8601 format for time. (SM7IUN, TNX G4IRN)
+- Fix header colour on callsign check form. (M1DST)
+- Fix font warning when closing Worked DXCC window. (M1DST)
+- Update a large number of database files. (SM7IUN, TNX OK1FIK, VE2FK, HA2NA, PA3HEN, AD1C)
+- Allow self spotting in VAQP. (SM7IUN)
+- Update XE RTTY with new multipliers. (SM7IUN)
+- Update YOTA Contest. (SM7IUN, TNX HA3LN)
+- Fix scoring for Low and QRP classes in Stew Perry. (SM7IUN)
+- Add World Wide Patagonia DX Contest. (SM7IUN, TNX HB9DUR)
+- Improve ADIF import error message. (SM7IUN, TNX LX1NO)
+- Tell user and save information if DXLog crashes. (K1XM, TNX G4PIQ)
+- Update live score for Bande Basse Italia. (SM7IUN)
+- Update Volta RTTY. (SM7IUN)
+- Make ADIF import fully standard compliant. (K6PO, TNX LX1NO)
+- Make log contact information fully Cabrillo v3 compliant. (SM7IUN, TNX HA1AG)
+- Add shortcut key Ctrl-Alt-C to edit standard messages. (SM7IUN)
+- Fix tab stops in Standard messages panel. (SM7IUN)
+- Add right-click to set sweet-spot frequency offset in MMVARI. (K6PO, TNX G4IRN)
+- Multiple improvements to digital mode operation including on-screen function keys. (K6PO)
+- Fix lost text formatting when interrupting transmission in MMVARI. (K6PO, TNX G0UWS)
+- Fix world map night/day regression. (SM7IUN)
+- Add Limited antennas overlay and regex prefill for VE stations to ARRL DX. (SM7IUN)
+- Remove legacy functionality to convert overlays into station categories. (SM7IUN)
+- Add support for Kenwood TS-870S. (SM7IUN, TNX SM0TGY)
+- Replace Batalha de Jenipapo Contest with CBJ-DX Contest. (SM7IUN, TNX PP5XA)
+
+More on: https://dxlog.net/sw/files/release_notes.txt
+</releaseNotes>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
