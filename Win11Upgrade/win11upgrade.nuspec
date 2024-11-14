@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://docs.chocolatey.org/en-us/create/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>win11upgrade</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>10.0.261000</version>
+    <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Patrick Henkelmann</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Win 11 Upgrade</title>
+    <authors>Microsoft Corporation</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.microsoft.com/de-de/windows/get-windows-11</projectUrl>
+    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
+    <!-- Here is an example using Githack -->
+    <iconUrl>https://365cloudstore.com/wp-content/uploads/2023/02/windows-11-500x500-01.png</iconUrl>
+    <copyright>2024 Microsoft Corporation</copyright>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>https://www.microsoft.com/de-de/windows/get-windows-11</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>win11upgrade windows upgrade</tags>
+    <summary>Upgrades your current installed Windows with Windows 11</summary>
+    <description>
+Installs Windows from a local resource. Some restarts are required after installation. This setup takes more than an hour.
+
+Installs Windows 11 24H2 from local GPO Fileshare.
+
+## Used Parameters
+`/Auto Upgrade` - Runs an upgrade with all user data and programs\
+`/quiet` - Installs in the Background\
+`/eula accept` - Accept EULA\
+`/telemetry disable` - Telemetry disabled\
+`diagnosticprompt enable` - Allow to enter cmd at OOBE\
+`/compat ignorewarning` - Ignore Warnings
+
+## Package Parameters
+More info: https://learn.microsoft.com/de-de/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11
+
+`/1394Debug` - Enables kernel debugging over an IEEE 1394 (FireWire) port while Windows is running and during the WindowsPE configuration pass of Windows Setup.\
+`/AddBootMgrLast` - Instructs Windows Setup to add the Windows Boot Manager as the last entry in the UEFI firmware boot order.\
+`/Auto` - Performs an automated upgrade to a newer version of Windows.ß
+`/BitLocker` - Specifies the BitLocker status during upgrades.\
+`/BusParams` - Specifies the PCI address of a 1394, USB, or NET debug port.\
+`/ConfigFile` - Specifies the location to the setupconfig file.\
+`/CompactOS` - Specifies whether to use the Compact OS feature to save hard drive space.\
+`/Compat` - Instructs Windows Setup how to handle compatibility scans and messages.\
+`/CopyLogs` - Windows Setup will copy or upload compressed logs upon failure to the specified location assuming machine/user has permission and network access to location.\
+`/Debug` - Enables kernel debugging over a communications (COM) port when Windows is running, and during the WindowsPE configuration pass of Windows Setup.\
+`/DiagnosticPrompt` - Specifies that the Command Prompt is available during Windows Setup.\
+`/DynamicUpdate` - Specifies whether Windows Setup will perform Dynamic Update operations (search, download, and install updates).\
+`/EMSPort` - Enables or disables Emergency Management Services (EMS) during Windows Setup and after the server operating system has been installed.\
+`/EULA` - Instructions Windows Setup to suppress the Windows Setup end user license agreement user experience.\
+`/Finalize` - Instructions Windows Setup to finish previously started update operations on the down-level OS, followed by an immediate reboot to start the offline phase.\
+`/ImageIndex` - Instructions Windows Setup which OS image to install from install.wim if multiple images may be applicable.\
+`/InstallDrivers` - Adds .inf-style drivers to the new Windows 10 installation.\
+`/InstallFrom` - Specifies a different Install.wim file to use during Windows Setup.\
+`/InstallLangPacks` - Adds language packs (lp.cab) to the new Windows 10 or above installation.\
+`/m` - Instructs Windows Setup to copy alternate files from an alternate location. This option instructs Windows Setup to look in the alternate location first, and, if files are present, to use them instead of the files from the default location.\
+`/MigNEO` - Tells Windows Setup to perform an upgrade of Windows without additional offline phase optimizations.\
+`/MigrateDrivers` - Instructs Windows Setup whether to migrate the drivers from the existing installation during the upgrade.\
+`/NetDebug` - Enables kernel debugging over the network.\
+`/NoReboot` - Instructs Windows Setup not to restart the computer after the down-level phase of Windows Setup completes.\
+`/PKey` - Supplies Windows Setup with the specific product key.\
+`/Priority` - Tells Windows Setup to increase the thread priority from low to normal for feature updates through Windows Update.\
+`/PostOOBE` - After Windows Setup is complete, run a script.\
+`/PostRollback` - Instructs Windows Setup to run a script if the feature update fails to install and rolls back the changes, or if the user chooses to uninstall the feature update and go back to a previous version of Windows.\
+`/Quiet` - This will suppress any Windows Setup user experience including the rollback user experience.\
+`/ReflectDrivers` - Specifies the path to a folder that contains encryption drivers for a computer that has third-party encryption enabled.\
+`/ResizeRecoveryPartition` - Specifies whether it's OK to resize the existing Windows Recovery Environment (Windows RE) partition or create a new one during installation.\
+`/ShowOOBE` - Specifies whether the user is required to interactively complete the out of box experience (OOBE).\
+`/SkipFinalize` - Instructions setup to start update operations on the down-level OS without initiating a reboot to start the offline phase.\
+`/Telemetrie` - Specifies whether Windows Setup should capture and report installation data.\
+`/TempDrive` - Instructs Windows Setup to put temporary installation files on the specified partition.\
+`/Unattend` - Enables you to use an answer file with Windows Setup.\
+`/Uninstall` - Determines whether Windows will include controls that allow the user to go back to the previous operating system.\
+`/USBDebug` - Sets up debugging on a USB port.\
+`/WDSDiscover` - Specifies that the Windows Deployment Services (WDS) client should be in discover mode.\
+`/WDSServer` - Specifies the name of the Windows Deployment Services (WDS) server that the client should connect to.\
+</description>
+    <releaseNotes>
+
+    </releaseNotes>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
