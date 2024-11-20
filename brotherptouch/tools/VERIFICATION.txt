@@ -1,0 +1,7 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+<Include details of how to verify checksum contents>
+Download the package as EXE File, extract with 7zip and you can find the msi inside.
+<If software vendor, explain that here>
