@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <!-- Here is an example using Githack -->
     <iconUrl>https://www.brother.com.au/-/media/ap2/australia/about/news/p-touch-editor-logo.png</iconUrl>
-    <copyright>1993 - 2023 Brother Industries, Ltd.</copyright>
+    <copyright>2001-2024 Brother Industries, Ltd. All Rights Reserved.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
@@ -51,22 +51,22 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>brotherptouch label</tags>
     <summary>Brother P-Touch Editor</summary>
-    <description>Dies ist eine moderne Softwareanwendung zum Erstellen und Bearbeiten von Etiketten.</description>
+    <description>This is an advanced software application to create and edit labels.</description>
     <releaseNotes>
 Version 5.4.015a
-  - Dieses Update enthält Verbesserungen. 
+    This update includes improvements.
 
 Version 5.4.015
-  - Das Update beinhaltet Fehlerbeseitigungen und Verbesserungen.
+    This update includes bug fixes and improvements.
 
 Version 5.4.014
-  - Dieses Update enthält Verbesserungen. 
+    This update includes improvements.
 
 Version 5.4.011
-  - Behebt kleinere Fehler.
+    Fixes minor issues.
 
 Version 5.4.009
-  - Das Update beinhaltet Fehlerbeseitigungen und Verbesserungen.
+    This update includes bug fixes and improvements.
     </releaseNotes>
     <!-- =============================== -->
 

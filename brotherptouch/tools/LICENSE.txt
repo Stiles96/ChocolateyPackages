@@ -1,36 +1,38 @@
-﻿From: https://support.brother.com/g/b/branch/downloadend.aspx?c=de&lang=de&prod=lpql720nweuk&os=10011&dlid=dlfp101145_000&flang=191&type3=296
+﻿From: https://support.brother.com/g/b/downloadend.aspx?c=us&lang=en&prod=lpql820nwbeus&os=10011&dlid=dlfp101145_000&flang=178&type3=296
 
-Endbenutzer-Lizenzvertrag für Brother Software
-WICHTIG - BITTE SORGFÄLTIG LESEN
-Der vorliegende Endbenutzer-Lizenzvertrag („EULA“) stellt eine rechtlich bindende Vereinbarung zwischen Ihnen und Brother Industries, Ltd. („Brother“) dar; sie regelt Ihre Nutzung der Brother-Software (einschl. zugehöriger Benutzerhandbücher und elektronischer Dokumente wie „Hilfe“- und „Read Me“-Dateien), die von dieser Website auf Ihren Computer oder Ihre Hardware heruntergeladen werden (zusammenfassend als „SOFTWARE“ bezeichnet). Wenn Sie sich damit einverstanden erklären, dass die Bestimmungen dieses EULA für Sie rechtlich bindend sind, dürfen Sie die auf dieser Website verfügbare Software gemäß den Bestimmungen des vorliegenden EULA herunterladen. Wenn Sie mit den Bedingungen des vorliegenden EULA nicht einverstanden sind, erteilt Ihnen Brother keine Lizenz für die Nutzung der SOFTWARE. In diesem Fall gilt die Verwendung der Software als nicht durch Brother genehmigt, und Sie dürfen die SOFTWARE nicht nutzen.
-| Eigentum | Lizenzgewährung | GARANTIEAUSSCHLUSS | Haftungsbeschränkung | Laufzeit | Datenschutzrichtlinie | Geltendes Recht | Exportbestimmungen | Andere Bestimmungen |
-Nutzungsbedingungen
-1. Eigentum
+End-User License Agreement for Brother Software
+IMPORTANT - PLEASE READ CAREFULLY
+This End-User License Agreement ("EULA") is a legal agreement between you and Brother Industries, Ltd. ("Brother"), which governs your use of Brother software (including associated user manuals and electronic documents such as “help” and “read me” files) that will be downloaded from this website to your computer or hardware (collectively "SOFTWARE"). If you agree to be legally bound by the terms of this EULA, you may download the available software on this website in accordance with the terms of this EULA. If you do not agree to the terms of this EULA, Brother shall not be deemed to have licensed the SOFTWARE to you. In such case, you are not authorized by Brother and you may not use the SOFTWARE.
+| Ownership | Grant of License | WARRANTIES DISCLAIMER | Limitation of Liability | Term | Privacy Policy | Governing Laws | Export Regulations | Other Terms |
+Terms and Conditions
+1. Ownership
 
-Alle Rechte, Ansprüche und Interessen an der SOFTWARE sind Eigentum von Brother oder seinen Zulieferern. Die zuvor genannten Rechte an der SOFTWARE werden Ihnen, wie im folgenden Paragraphen 2 dargelegt, auf eingeschränkter Basis gewährt. In keinem Fall ist diese Bestimmung in irgendeiner Weise dahingehend auszulegen, dass Urheberrechte oder sonstige geistige Eigentumsrechte an der SOFTWARE von Brother an Sie übertragen oder verkauft werden.
-2. Lizenzgewährung
-2.1   	Brother gewährt Ihnen eine nicht-exklusive, nicht-übertragbare Lizenz zur Installation und Verwendung der Kopie der SOFTWARE auf Computer oder Hardware.
-2.2   	Mit Ausnahme der vorstehend gemäß Paragraph 2.1 ausdrücklich dargelegten Sachverhalte, gewährt Ihnen Brother keine weiteren Lizenzen bezüglich der SOFTWARE. Soweit es aufgrund geltender Gesetze nicht ausdrücklich zugelassen ist, dürfen Sie (i) die SOFTWARE nicht modifizieren, (ii) die SOFTWARE nicht abändern, zurückentwickeln, disassemblieren, dekompilieren oder sie für die Erstellung von abgeleiteter Software verwenden, (iii) die SOFTWARE nicht vermieten oder verleasen und (iv) die SOFTWARE nicht zum Download anbieten.
+All rights, titles and interest in and to the SOFTWARE are owned by Brother or its suppliers. The foregoing rights to the SOFTWARE are licensed to you on a limited basis as prescribed in the following Article 2. In any event, this provision should not be construed in any way, as an expression to assign or sell any copyrights of, or any other intellectual property rights to, the SOFTWARE from Brother to you.
+2. Grant of License
+2.1   	Brother grants you a non-exclusive, non-transferable license to install and use the copy of the SOFTWARE on computer or hardware.
+2.2   	Except for expressly stipulated in Sections 2.1 above, Brother does not grant you any license relating to the SOFTWARE. Except to the extent expressly permitted by applicable law, you may not, (i) modify the SOFTWARE, (ii) reverse engineer, disassemble, decompile or use the SOFTWARE to create any derivative software, (iii) rent or lease the SOFTWARE, or (iv) make available to download the SOFTWARE to the public.
 
-3. GARANTIEAUSSCHLUSS
+3. WARRANTIES DISCLAIMER
 
-IM GESETZLICH ERLAUBTEN UMFANG WIRD IHNEN DIESE SOFTWARE OHNE MÄNGELGEWÄHR („IM IST-ZUSTAND“) UND OHNE JEGLICHE MÜNDLICH ODER SCHRIFTLICH EXPLIZIT ODER IMPLIZIT FESTGELEGTEN GARANTIEN ODER BEDINGUNGEN ZUR VERFÜGUNG GESTELLT. INSBESONDERE LEHNT BROTHER JEDE ART VON IMPLIZITEN GARANTIEN ODER BEDINGUNGEN DER MARKTGÄNGIGKEIT, DER ZUFRIEDENSTELLENDEN QUALITÄT, DER NICHTVERLETZUNG VON RECHTEN UND/ODER DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK AB.
-4. Haftungsbeschränkung
+TO THE EXTENT ALLOWED BY LAW, THIS SOFTWARE IS PROVIDED TO YOU "AS IS" WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, WHETHER ORAL OR WRITTEN, EXPRESS OR IMPLIED. BROTHER SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, NON-INFRINGEMENT AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+4. Limitation of Liability
 
-AUF KEINEN FALL KANN BROTHER FÜR ENTGANGENEN GEWINN, ENTGANGENE GESCHÄFTSCHANCEN, ENTGANGENE DATENNUTZUNG, UNTERBRECHUNG DER GESCHÄFTSTÄTIGKEIT ODER INDIREKTE, BESONDERE, ZUFÄLLIGE SCHÄDEN, STRAFEN ODER SCHADENERSATZ EINSCHLIESSENDE SCHÄDEN ODER FOLGESCHÄDEN HAFTBAR GEMACHT WERDEN, DIE VERTRAGSMÄSSIG, DURCH UNERLAUBTE HANDLUNG ODER AUF SONSTIGE WEISE AUS DER NUTZUNG DIESER SOFTWARE, DER UNFÄHIGKEIT, DIESE ZU NUTZEN, ODER DEM ERGEBNIS DER NUTZUNG DIESER SOFTWARE ENTSTEHEN. DIE NUTZUNG DIESER SOFTWARE ERFOLGT VOLLSTÄNDIG AUF EIGENE GEFAHR. SOLLTE SICH DIE SOFTWARE ALS MÄNGELBEHAFTET ERWEISEN, ÜBERNEHMEN SIE (DER NUTZER) DIE GESAMTEN KOSTEN FÜR ALLE SERVICELEISTUNGEN, REPARATUREN ODER KORREKTUREN UND VERPFLICHTEN SICH IM UMFANG DES ANWENDBAREN RECHTS, BEDINGUNGSLOS AUF ALLE GESETZLICHEN ODER SONSTIGEN RECHTE ZU VERZICHTEN, DIE IHNEN GEGEBENENFALLS BEZÜGLICH SOLCHER MÄNGEL GEGENÜBER BROTHER ZUSTEHEN. Ungeachtet des oben Festgelegten sollen diese Bestimmungen nicht dazu dienen, die gesetzlichen Verbraucherschutzrechte einzuschränken, auf die im Rahmen des anwendbaren Rechts nicht verzichtet werden kann.
-5. Laufzeit
+IN NO EVENT SHALL BROTHER BE LIABLE FOR ANY LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITIES, LOSS OF USE OF DATA, INTERRUPTION OF BUSINESS, OR FOR INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND, ARISING OUT OF THE USE, INABILITY TO USE, OR THE RESULTS OF USE OF THE SOFTWARE, WHETHER BASED IN CONTRACT, TORT, OR OTHERWISE. YOUR USE OF THE SOFTWARE IS ENTIRELY AT YOUR OWN RISK. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL SERVICE, REPAIR OR CORRECTION AND, TO THE EXTENT PERMITTED BY THE APPLICABLE LAW, YOU AGREE TO UNCONDITIONALLY WAIVE ALL STATUTORY OR OTHER RIGHTS THAT MAY BE HELD BY YOU AGAINST BROTHER IN RESPECT OF SUCH DEFECT. Notwithstanding the above, these terms do not purport to limit the statutory rights of a consumer that cannot be waived under the applicable law.
+5. Term
 
-Diese EULA wird wirksam, sobald Sie sie annehmen, und läuft weiter, bis Sie die SOFTWARE nicht mehr nutzen. Allerdings kann Brother diese EULA ohne Vorankündigung kündigen.
-6. Datenschutzrichtlinie
+This EULA will become effective upon your acceptance and continue in effect unless you cease to use the SOFTWARE. However, Brother may terminate this EULA without prior notice to you.
+6. Privacy Policy
 
-Wir respektieren Ihre Privatsphäre. Jede Sammlung und Nutzung Ihrer personenbezogenen Daten durch Brother unterliegt deshalb unserem aktuellen Datenschutzrichtlinie und sämtliche Nutzungsbedingungen in dieser Datenschutzrichtlinie sind Teil der vorliegenden EULA und gelten für Sie im Rahmen der Geschäftsbedingungen der vorliegenden EULA.
-7. Geltendes Recht
+We respect your privacy and any collection or use of your personal data by Brother will be governed in our latest issued Privacy Policy and all terms and conditions in such Privacy Policy shall be a part of this EULA and apply to you with terms and conditions of this EULA.
+7. Governing Laws
 
-Diese EULA unterliegt japanischem Recht und japanischer Rechtsprechung. Falls Bestimmungen dieser EULA für ungültig erklärt werden, sind diese Bestimmungen trennbar und unabhängig von den anderen Bestimmungen dieser EULA und die Gültigkeit der anderen Bestimmungen der EULA insgesamt bleibt davon unberührt.
-8. Exportbestimmungen
+This EULA is governed and controlled under the jurisdiction of the laws of Japan. If any of the provisions of this EULA shall be declared void, such provisions shall be severable and independent from the other provisions of this EULA, and the validity of the other provisions and of the entire EULA shall not be affected.
+8. Export Regulations
 
-Sie sind nicht berechtigt, die SOFTWARE zu verwenden oder anderweitig zu exportieren oder zu reexportieren, es sei denn, dies ist nach japanischem Recht, nach dem Recht der Vereinigten Staaten von Amerika und nach dem Recht des Landes, in dem die SOFTWARE erworben wurde, zulässig.
-Insbesondere darf die SOFTWARE nicht exportiert oder reexportiert werden (a) in Länder, gegen die ein US-Embargo verhängt wurde, oder (b) an Personen, die auf der Liste der Specially Designated Nationals des US-Finanzministeriums oder der Denied Person's List oder Entity List des US-Handelsministeriums stehen.
-Durch die Nutzung der SOFTWARE sichern Sie zu und gewährleisten, dass Sie sich nicht in einem solchen Land befinden oder auf einer solchen Liste stehen.
-Sie sichern zu und gewährleisten, dass Sie nicht Staatsbürger eines der oben genannten Embargoländer sind oder sich in einem solchen Land befinden und dass es Ihnen nicht anderweitig nach geltendem Recht verboten ist, die SOFTWARE zu erhalten. 
-9. Andere Bestimmungen
+You may not use or otherwise export or re-export the SOFTWARE except as authorized by Japanese law, United States law and the laws of the jurisdiction in which the SOFTWARE was obtained.
+In particular, but without limitation, the SOFTWARE may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person’s List or Entity List.
+By using the SOFTWARE, you represent and warrant that you are not located in any such country or on any such list.
+You represent and warrant that you are not a citizen or otherwise located within an embargoed nation above and that you are not otherwise prohibited under any applicable law from receiving the SOFTWARE.
+9. Other Terms
+
+In the event you have agreed to or accepted with any terms and conditions offered by Brother or any third party licensor ("Optional Terms") with respect to use of the Software subject to this Agreement, such Optional Terms shall prevail in all respects to the extent of any conflict with terms and conditions set forth in this Agreement, and non-existence of applicable or corresponding terms in this Agreement. 

@@ -3,5 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 <Include details of how to verify checksum contents>
-Download the zip File from: https://win7games.com/ and unzip this. You will find the executable.
+1. Goto: https://win7games.com/
+2. Download Games
+3. Unzip
+4. There is the Windows7Games_for_Windows_11_10_8.exe (Renamed in tools folder)
+
 <If software vendor, explain that here>

@@ -3,5 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 <Include details of how to verify checksum contents>
-Download the package as EXE File, extract with 7zip and you can find the msi inside.
+1. Download p-touch Editor from: https://support.brother.com/g/b/downloadend.aspx?c=us&lang=en&prod=lpql820nwbeus&os=10011&dlid=dlfp101145_000&flang=178&type3=296 (maybe you need a valid serial number)
+2. Extract the file with 7zip
+3. Inside the folder you find the Brother p-Touch MSI File.
 <If software vendor, explain that here>
