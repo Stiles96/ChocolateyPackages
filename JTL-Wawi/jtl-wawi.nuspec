@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>jtl-wawi</id>
+    <version>1.9.6.5</version>
+    <title>JTL-Wawi</title>
+    <authors>JTL Software GmbH</authors>
+    <owners>Patrick Henkelmann</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.jtl-software.de/agb</licenseUrl>
+    <projectUrl>https://www.jtl-software.de/warenwirtschaft</projectUrl>
+    <iconUrl>https://guide.jtl-software.de/site/themes/jtlguide/assets/dist/logos/jtl-wawi.svg</iconUrl>
+    <description>JTL-Wawi is an inventory management system which supports Ebay, Amazon and more. It automates processes, links multiple shops, marketplaces. This includes "Ameise", "Packtisch+", "Shipping", "JTL-Pos", "Eazyauction" and "JTL-Shop" access software.</description>
+    <summary>JTL-Wawi Package</summary>
+    <releaseNotes>https://www.jtl-software.de/jtl-wawi-download/changelog</releaseNotes>
+    <tags>jtl wawi</tags>
+    <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
+    <docsUrl>https://guide.jtl-software.de/jtl-wawi/</docsUrl>
+    <mailingListUrl>https://forum.jtl-software.de/</mailingListUrl>
+    <bugTrackerUrl>https://issues.jtl-software.de/issues?project=wawi</bugTrackerUrl>
+    <dependencies>
+      <dependency id="netfx-4.8" version="4.8.0" />
+    </dependencies>
+  </metadata>
+</package>
