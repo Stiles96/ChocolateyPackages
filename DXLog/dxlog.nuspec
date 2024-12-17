@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.10</version>
+    <version>2.6.11</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,40 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.10
+    <releaseNotes>Ver 2.6.11
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Use the clipboard for copy / paste. (K1XM, TNX AK1MD)
+- Allow logging 7Q1. (SM7IUN)
+- Add "Force Log QSO" to the Edit menu. (M1DST)
+- Check that window colors are valid. (K1XM, TNX W9PA)
+- Remove warning about spot lifetime and allow 1-2880 minutes. (SM7IUN, TNX G4CWT, HA1A, G4PIQ, G3WW, HB9DUR)
+- Add ability to write a memory dump. (K1XM)
+- Update Ham Spirit Contest. Note: DXLog is unable to fully support the new, incremental scoring. (SM7IUN)
+- Add Argentina National 40m Contest. (SM7IUN)
+- Add own station callsign element "mycall" to radio information broadcast datagrams. (SM7IUN)
+- Various improvements to internationalization. (SM7IUN)
+- Make "Real Time Contest" live score setting work for all contests on all scoreboards. (SM7IUN)
+- Update NRRL Telefonitest to 2024 rules. (SM7IUN, TNX LB3RE)
+- Improvements to Ctrl-F1/F2 mode switching. (SM7IUN, TNX DA1DX)
+- Update MCD QP with new web links. (SM7IUN, TNX IK2JUB)
+- Update Cabrillo for ARRL EME. (SM7IUN, TNX F4IEY)
+- Allow self spotting in all RSGB contests. (SM7IUN, TNX G4FAL)
+- Update Commonwealth Contest to 2025 rules. (SM7IUN, TNX G4FAL)
+- Update RSGB 160m Contest to 2025 rules. (SM7IUN, TNX G4FAL)
+- Allow DXLog to grab focus from other programs. (K1XM, TNX DU0A)
+- Add option to activate radio on double click in bandmap. (K1XM, TNX AK1MD)
+- Improve handling of double click in bandmap when Enable single click selection is set. (K1XM)
+- Replace cluster node HA6DX with HA2NA in default cluster list. (SM7IUN, TNX HA3LN)
+- Fix problems when loading windows layout. (K1XM, TNX SM7IUN)
+- Fix problems with loading callsign from bandmap into other VFO. (K1XM, TNX SM7IUN)
+- Update check windows and messages when changing VFOs. (K1XM)
+- Automatically download master.scp and the country files when a devtest or release is made. (M1DST)
+- Fix driver for Yaesu FTDX5000. (SM7IUN, TNX EA5U)
+- Fix problem where callsign may be erased when swapping VFOs. (K1XM)
+- Don't allow or use sprint logic except in sprint contests. (K1XM)
+
+Ver 2.6.10
 ------------------------
 - Make menu option to make spectrum width changeable persistent. (K6PO)
 - Do not rebuild updater when preparing a new release to reduce false anti-virus triggers. (M1DST)
