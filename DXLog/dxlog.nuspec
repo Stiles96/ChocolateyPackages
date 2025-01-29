@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.11</version>
+    <version>2.6.12</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,50 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.11
+    <releaseNotes>Ver 2.6.12
+------------------------
+- Fix soundcard selection - DVK and Contest Recorder (M1DST)
+- Fix soundcard selection within MMVARI (M1DST)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Refactoring and Fix for azimuth and distance within LookupInfo broadcast message (M1DST)
+- Add mode to spot broadcast. (SM7IUN, TNX M0CKE)
+- Correct scoring and multiplier count display for /MM in REF. (SM7IUN)
+- Update Russian Cup. (SM7IUN, TNX R9IR)
+- Fix issues with duplicate spots. (K6PO, TNX N6KI)
+- Don't crash if double clicking in the bandmap when single click is enabled. (K1XM, TNX AK1MD)
+- Mark spots of other modes correctly when logging and dupe rule is not per mode. (SM7IUN)
+- Remove "and grabbing" in bandmap's context menu item to "Multipliers only in list view and grabbing". (SM7IUN, TNX K6PO)
+- Fix Extra Extra Large font in entry window. (K1XM, TNX HA3LN)
+- Update WW PMC with 2025 rules. (SM7IUN, TNX S54X)
+- Update dupe rule for WWFF to also be per day. (SM7IUN, TNX LZ2HT)
+- Add proper overlays to YOTA. (SM7IUN)
+- Corrections to FT-2000 driver. (SM7IUN, TNX YT3W)
+- Update HA DX with 2025 rules. (SM7IUN, TNX HA3LN)
+- Add AN to valid multipliers in FOC Marathon. (SM7IUN, TNX DL6KVA)
+- Add status bar message for enabling/disabling Focus grabbing. (SM7IUN)
+- Add azimuthal view to world map. (K6PO)
+- Fix default antenna selection for spectrum sources RSP2 and RSPduo. (K6PO)
+- Fix CQ Bande Basse for DX stations. (SM7IUN, TNX IT9IVU)
+- Make self spotting split aware. (SM7IUN, TNX OK2ZC)
+- Fix crash when configuring ports if WinKey has been configured previously. (K1XM, TNX IK2NCJ)
+- Allow self spotting in NAQP. (SM7IUN, TNX N2NT)
+- Fix bandmap issue with using VFO B on Radio 2. (SM7IUN)
+- Add app to radio information broadcast datagrams. (SM7IUN)
+- Clear QSO notes when clearing log. (SM7IUN, TNX DJ8EW)
+- Add AGCW Handtastenparty. (SM7IUN, TNX DJ8EW)
+- Add text command ALIGN and macro command $ALIGN for digital. (K6PO)
+- Update ES-ULL-KV with 2025 rules. (SM7IUN, TNX ES7GM)
+- Don't crash when setting frequency allocation with no log open. (SM7IUN, TNX F6HBI)
+- Add YL Proklamesana and 80m contests. (SM7IUN, TNX YL3DQ)
+- Add support for Xiegu X6200 and update driver for Xiegu G90. (SM7IUN)
+- Fix bug with literals without traling space in Cabrillo export. (SM7IUN)
+- Don't let custom multiplier progress window inherit unavailable display settings from earlier log. (SM7IUN)
+- Fix Rx Status display for single receiver SO2V. (SM7IUN)
+- Correct frequency allocations for Region 1. (SM7IUN)
+- Update all UBA contests with 2025 rules. (SM7IUN)
+- Add option for same TX and RX on an antenna controller. (K1XM, TNX K3JO)
+
+Ver 2.6.11
 ------------------------
 - Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
 - Use the clipboard for copy / paste. (K1XM, TNX AK1MD)
