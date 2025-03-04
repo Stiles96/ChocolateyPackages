@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.12</version>
+    <version>2.6.14</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,49 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.12
+    <releaseNotes>Ver 2.6.14
+------------------------
+- Fix crash when opening MMVARI window. (K6PO, TNX K3JO)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Add CQ Budapest URH PuskÃ¡s Kupa. (SM7IUN, TNX HA3LN)
+- Add station information to HADX and YOTA Cabrillo. (SM7IUN, TNX HA3LN)
+- Add missing Illinois exchange to ARRL SCR. (SM7IUN, TNX K4IEY)
+- Update Canadian multipliers in many NA QSO parties. (SM7IUN)
+- Update some contest group names for consistency. (SM7IUN)
+- Limit length of QSO comment and QSL message to 64 characters in ADIF export. (SM7IUN)
+- Update scoring in VTQP to 2025 rules. (SM7IUN)
+- Fix crash and clean up code for secondary RTTY decoders (K6PO, K1XM, TNX HB9CAT)
+- Fix rare crash when closing CW keyboard. (K1XM)
+- Update category naming in ARRL DX. (SM7IUN, TNX GU4YOX)
+- Update MEQP and MSQP to make LB and NF count separately. (SM7IUN)
+- Remove digital modes from MNQP. (SM7IUN)
+- Allow self spotting, fix Canadian provinces, and remove 160m in NHQP. (SM7IUN)
+- Fix Cabrillo export for FISTS Sprint. (SM7IUN, TNX IU3BRO)
+- Fix rare crash when displaying multipliers. (K1XM, TNX WC1M)
+- Allow self spotting in ALQP. (SM7IUN)
+- Improve robustness of RIT handling and mode polling for ICOM radios. (SM7IUN)
+- Prevent crash if F1 is pressed when no contest is loaded. (M1DST)
+- Prevent delay when audio plays through the DVK (M1DST, TNX G4CLA)
+- Rename WW Patagonia Contest to WW Argentina Contest. (SM7IUN, TNX LU1VYL)
+- Make RDXC prefill more accurate. (SM7IUN)
+- Add default band plans for 2.3GHz and up. (SM7IUN, TNX G4CLA)
+- Allow self spotting in BARTG RTTY. (SM7IUN)
+
+Ver 2.6.13
+------------------------
+- Add machine readable data to header in ADIF export. (SM7IUN)
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Fix multiple corner case issues involving COMMENT, FST4, and QSLMSG in ADIF export. (SM7IUN)
+- Rename RSGB BERU to Commonwealth Contest. (SM7IUN, TNX ZL3GA)
+- Improve speed and robustness of ADIF import. (SM7IUN)
+- Add 160m to VTQP. (SM7IUN, TNX AK1MD)
+- Fix bandmap list view scrolling anomaly. (K6PO)
+- Fix worked DXCC window for NA Sprint. (SM7IUN, TNX N2NT)
+- Update FOC Marathon. (SM7IUN, TNX GU4YOX)
+- Make automatic scrolling in bandmap list view optional. (K6PO)
+- Fix a problem where MMVARI NET state would get reset OFF when ALIGN executed. (K6PO, TNX SP5KP)
+
+Ver 2.6.12
 ------------------------
 - Fix soundcard selection - DVK and Contest Recorder (M1DST)
 - Fix soundcard selection within MMVARI (M1DST)
