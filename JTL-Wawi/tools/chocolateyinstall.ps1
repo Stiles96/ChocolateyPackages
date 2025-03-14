@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url           = 'https://downloads.jtl-software.de/setup-jtl-wawi_1.9.6.5_1127-1603_00545d74c8e.exe'
+$url           = 'https://downloads.jtl-software.de/setup-jtl-wawi_1.9.8.0_0228-0943_82495ec11c0.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
   softwareName  = 'JTL-Wawi'
-  checksum      = '04E462E1B4ECD96ABD54A1F31F02953F40517D93A81A1EFC1AD7EC69BD08CFE9'
+  checksum      = '59F835D27688F5733525D2E6CD2C0AC40DB49DC157CC13707793C9235794531E'
   checksumType  = 'sha256'
   silentArgs	 = "/SP- /SILENT /ALLUSERS /NOCANCEL /NORESTART /LOG /NORESTARTAPPLICATIONS /CLOSEAPPLICATIONS"
   validExitCodes= @(0, 3010, 1641)
