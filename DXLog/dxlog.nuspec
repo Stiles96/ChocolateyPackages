@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.14</version>
+    <version>2.6.15</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,79 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.14
+    <releaseNotes>Ver 2.6.15
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Show two radios in the Band notes window. (K1XM, TNX M5RIC)
+- Do not list XXX in worked multiplier window for UBA. (SM7IUN)
+- Do not misleadingly mark U26 stations as multipliers in YOTA. (SM7IUN, TNX HA3LN)
+- Fix issue with own call area in Commonwealth Contest. (SM7IUN, TNX GW0ETF)
+- Add Zagreb FM Contest. (SM7IUN, TNX 9A3CBW)
+- Correct swapped menu texts for Ctrl-F10 and Ctrl-F11. (SM7IUN)
+- Allow self spotting in all BARTG contests. (SM7IUN)
+- Improve network status window performance. (K1XM, TNX G4CLA)
+- Get EXTFSK, EXTFSK64, and TinyFSK to work with MMVARI for keyed FSK. (K6PO)
+- Add support for Yaesu FT-100D. (SM7IUN)
+- Fix issue with mode control for Yaesu FT-900. (SM7IUN)
+- Add support for Kenwood TS-850S. (SM7IUN)
+- Don't crash if header items are missing in the log file. (K1XM, TNX YU1EW)
+- Show contest configuration window if there is a problem auto-loading a log. (SM7IUN)
+- Add support for reverse sideband CW with Yaesu FT-920. (SM7IUN)
+- Fix issue with reverse sideband CW with Yaesu FT-710. (SM7IUN)
+- Fix bug in Rx focus display for Shift-Ctrl-F1 in SO2V. (SM7IUN)
+- Add prefill to EA PSK63 Contest. (SM7IUN, TNX EA2AZ)
+- Fix dash-related bug in contest definition parser. (SM7IUN)
+- Add Atlantic Canada QSO Party. (SM7IUN, TNX VE1RGO)
+- Improve worked multiplier layout for a number of contests. (SM7IUN)
+- Remove irrelevant grid tracker from ARRL EME. (SM7IUN)
+- Update AZQP to 2025 rules. (SM7IUN)
+- Remove PSK from LAQP. (SM7IUN)
+- Fix bug in prefix area determination. (SM7IUN)
+- Correct multipliers for all PODXS contests. (SM7IUN)
+- Clean up multipliers in a number of contests. (SM7IUN)
+- Fix workable station bandmap issue in Commonwealth Contest. (SM7IUN, TNX GU4YOX)
+- Fix a rare bug in WPX prefix determination. (SM7IUN)
+- Fix broken multiplier type LETTER1 and add LASTLETTER for future use. (SM7IUN)
+- Make some minor improvements to callsign parsing. (SM7IUN)
+- Never disable RIT on ICOM. (SM7IUN)
+- Prevent Script manager from misbehaving when empty. (SM7IUN, TNX G4VDB)
+- Fix multiplier determination in Commonwealth Contest. (SM7IUN, TNX G4PIQ)
+- Fix bug which causes flicker in the spectrum amplitude display. (K1XM)
+- Add YBDXPI SSB Contest. (SM7IUN)
+- Fix live score contest name for ARRL VHF and CBJ-DX Contest. (SM7IUN)
+- Update RSGB 80m CC warning file. (SM7IUN, TNX G2NF)
+- Update driver for ICOM IC-775. (SM7IUN, TNX Z32TO)
+- Work around bug in early firmware versions of TS-480SAT and TS-480HX. (SM7IUN)
+- Enable support for reverse sideband CW for selected older ICOM radios. (SM7IUN)
+- Improve polling for Kenwood TS-2000. (SM7IUN, TNX HA1YA)
+- Add support for spectrum display with ICOM IC-7760. (SM7IUN)
+- Remove YB DX 80m Contest. (SM7IUN)
+- Make $TIME send the same time until logging or reset with $RESETTIME. (SM7IUN, TNX OK1DSZ)
+- Add Africa All Mode International DX Contest. (SM7IUN)
+- Improve syntax checking in contest configuration parser. (SM7IUN)
+- Fix subtle errors in 48 contests. (SM7IUN)
+- Add 7 local ZS contests. (SM7IUN, TNX ZR6DX)
+- Fix issue with USB/LSB and CW/CWR affecting warning files. (SM7IUN)
+- Update SARL HF Contest to 2025 rules. (SM7IUN, TNX ZR6DX)
+- Update valid multipliers for EU PSK DX. (SM7IUN)
+- Update scoring rules for PGA DIGI. (SM7IUN)
+- Fix corner case issue with multiplier exception DXCC. (SM7IUN)
+- Add contest definiton helper functions Helpers.PadNumber3 and Helpers.PadNumber2. (SM7IUN)
+- Update FOC Marathon, FOC BW QP, and Silent Key Memorial Contest. (SM7IUN)
+- Prevent rare crash with $MYDXCC, $CQZONE, and $ITUZONE. (SM7IUN)
+- Add macro command $DXCC for consistency, equivalent to $MYDXCC. (SM7IUN)
+- Make some minor usability improvements to Contest configuration window. (SM7IUN)
+- Create separate contest group LEGACY CONTEST for contests no longer held. (SM7IUN)
+- Update CQ Vojvodina, Vidovdan, and KT Cup Serbia to 2025 rules. (SM7IUN, TNX YT1WA)
+- Rename KT KUP SRRS to HF KUP SRRS and add VHF KUP SRRS. (SM7IUN, TNX E77C)
+- Rename HB Field Day to USKA Field Day and HB Xmas to USKA Christmas Contest and update to 2025 rules. (SM7IUN)
+- Do not give QSO which fails CTY DXCC entity determination zero points. (SM7IUN)
+- Fix bug with contest definition key MULT3_MULTIPLIER and add "ALL" as catch-all. (SM7IUN)
+- Add contest definition keys FIELD_CALLSIGN_GRID_CHECK, FIELD_RCVD_GRID_CHECK, and CABRILLO_CLUB_FIELD. (SM7IUN)
+- Minor updates in a lot of contests. (SM7IUN)
+- Do not broadcast QSO twice when logging from WSJT-X. (SM7IUN, TNX EA5U)
+
+Ver 2.6.14
 ------------------------
 - Fix crash when opening MMVARI window. (K6PO, TNX K3JO)
 - Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
