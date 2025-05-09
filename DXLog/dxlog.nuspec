@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.15</version>
+    <version>2.6.16</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,49 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.15
+    <releaseNotes>Ver 2.6.16
+------------------------
+- Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Introduce strict syntax checking of contest definition files. (SM7IUN)
+- Replace outdated acronym WWL with Grid in user interface. (SM7IUN)
+- Fix Kenwood TS-850S driver. (SM7IUN, TNX Z32TO)
+- Make devtest releases prompt for update when a public release of same or greater build is available. (SM7IUN)
+- Fix issues with parsing SH/DX spots in DXLog and DXLog.net.DXC. (SM7IUN)
+- Update a number of contests and add some warning files. (SM7IUN)
+- Fix issue with DXCC in internal QSO list. (SM7IUN, TNX K5GN)
+- Make Zone check export ignore CTY settings and always use CTY_WT_MOD. (SM7IUN)
+- Remove leading zeroes in zone numbers in CSV export. (SM7IUN)
+- Don't erase contest files missing on web server when trying to update them online. (SM7IUN, TNX OK1DSZ)
+- Improve performance of bandmap windows. (K1XM)
+- Add optional high performance buffer to bandmap windows. (K1XM)
+- Allow selection of bandmap frequency window font. (K1XM)
+- Add Pause button to inhibit scrolling in digital decoder windows (K6PO)
+- Add option of vertical wrap instead of scrolling in digital decoder windows (K6PO)
+- Improve drivers for pre-2008 ICOM radios. See documentation wiki for details. (SM7IUN)
+- Update all local ES contests and remove some. (SM7IUN, TNX ES7GM)
+- Allow arithmetic expressions for points with POINTS_FIELD_BAND_MODE. (SM7IUN)
+- Make station type selectable also for SO2R when contest entry is multi-operator. (SM7IUN, TNX SM2WMV, OH6XX)
+- Update CPQP with 2025 rules. (SM7IUN, TNX VE5CPU)
+- Fix multiple issues with DXCC entities having lowercase letters like JA/o and FT/j. (SM7IUN)
+- Consistently use "grid" for Maidenhead grid locator in UI as other major contest loggers. (SM7IUN))
+- Separate control and configuration menu items for interlock. (SM7IUN, TNX SM2WMV)
+- Remove unnecessary submenu for updating Super Check Partial database. (SM7IUN)
+- Make DXCCPFX and QSO_DXCC handle DXCC main prefix including slashes and lower case letters. (SM7IUN)
+- Fix sunrise and sunset calculation for spots including recognition of polar day and night. (SM7IUN, TNX OH6XX)
+- Improve automatic field filling logic in Contest configuration window. (SM7IUN)
+- Add wildcards to DXLog.DXC blacklisting. (SM7IUN)
+- Improve bandmap list mode handling when a station is removed. (K1XM, TNX G4CLA)
+- Add LZ HF Championship. (SM7IUN, TNX LZ2XA)
+- Make handling of diversity more consistent for all supported radios. (SM7IUN)
+- Disable radio configuration menu "Always use radio DATA mode for any DIGI mode" in preparation for removal. (SM7IUN)
+- Add Polish National QRP Contest. (SM7IUN, TNX SP5KP)
+- Expand options for contest definition key ADIF_KEYS. See wiki for details. (SM7IUN)
+- Add All JA Contest. (SM7IUN, TNX JR3WXA)
+- Add LABRE QRS-10 Contest. (SM7IUN, TNX PY2AA)
+- Updated drivers for Yaesu FT-450D, FTDX101D, FTDX101MP, FTDX10, and FT-710. (SM7IUN)
+- Update K1USN SST and add support for hamscore.com. (SM7IUN)
+
+Ver 2.6.15
 ------------------------
 - Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
 - Show two radios in the Band notes window. (K1XM, TNX M5RIC)
