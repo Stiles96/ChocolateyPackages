@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.16</version>
+    <version>2.6.18</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,85 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.16
+    <releaseNotes>Ver 2.6.18
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Add bonus stations for VAQP. (SM7IUN)
+- Add RSGB VHF M1 and M4 contests. (SM7IUN, TNX M1DST)
+- Enable Hamscore for NAQP and NAQP RTTY. (SM7IUN, TNX K9CT)
+- Fix bug related to clearing Hamscore log for contests with mode specific Cabrillo name. (SM7IUN)
+- Include state in ADIF export for NA QSO parties. (SM7IUN)
+- Include DOK in ADIF export for a number of German contests. (SM7IUN)
+- Fix issue with validity checking in some contests with zone exchange. (SM7IUN, TNX IS0BZR)
+- Retire non-functional contest definition keys MULT1_SHOWERROR, MULT2_SHOWERROR, and MULT3_SHOWERROR. (SM7IUN)
+- Fix live score reporting of multipliers in a number of contests. (SM7IUN)
+- Make names in ADIF export title case. (SM7IUN)
+- Add support for $POWER in sent contest exchange window. (SM7IUN)
+- Fix issue with conditional values of FIELD_RCVD_TYPE. (SM7IUN)
+- Don't truncate frequencies in network status window. (K1XM, TNX IK2JUB)
+- Add World Wide Award log type. (SM7IUN, TNX CT1ILT)
+- Recognize FT mode QSO logged in WSJT-X for ARRL Field Day, EU VHF, NA VHF, and WW DIGI Contests. (SM7IUN, TNX WT2P)
+- Do not apply digital frequency correction in non-MMVARI modes. (SM7IUN)
+- Add $GRID4 to valid values for ADIF_KEYS. (SM7IUN)
+- Fix issue with DX stations in Cabrillo export for NAQP and NAQP RTTY. (SM7IUN)
+- Allow cluster spots in MEQP. (SM7IUN)
+- Fix issue with out of state stations in NCQP. (SM7IUN)
+- Fix issue with assistance for multi-one in NYQP. (SM7IUN)
+- Fix multipliers in DARC Traning Contest. (SM7IUN)
+- Improve ADIF export for a lot of contests. (SM7IUN)
+
+Ver 2.6.17
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Improve capabilities of contest definition key ADIF_KEYS. (SM7IUN)
+- Improve ADIF export for a number of contests. (SM7IUN)
+- Add nonexistent categories to NEQP for online scoreboard. (SM7IUN, TNX AK1MD)
+- Update ISTRA Open Contest to include 40m. (SM7IUN, TNX 9A1UN)
+- Do not include STX in ADIF export if serial number is not used. (SM7IUN)
+- Add a second, optional regular expression to contest definition key ADIF_KEYS. (SM7IUN)
+- Improve import of ADIF from other loggers. (SM7IUN)
+- Improve automatic spectrum reference level setting for ICOM radios. (SM7IUN)
+- Fix diversity in new FTDX101D driver. (SM7IUN, TNX LZ5DB)
+- Add SSB to Latvian 80m YL test. (SM7IUN, TNX YL3OI)
+- Enable fake diversity for ICOM IC-7800. (SM7IUN, TNX LZ5DB)
+- Make Ctrl-Alt-S cancel diversity mode in SO2V. (SM7IUN, TNX LZ5DB)
+- Update diversity mechanics in SO2V for relevant ICOM and Yaesu radios. (SM7IUN, TNX LZ5DB)
+- Fix data mode for DVK with FTDX101D, FTDX10, and FT-710. (SM7IUN)
+- Replace deprecated $MYDXCC with $DXCC in a number of contest definition files. (SM7IUN)
+- Add ORARI DX Contest. (SM7IUN, TNX YB0NDT)
+- Show global QSO rate in Rate window if no rate targets exist. (SM7IUN, TNX LZ5DB)
+- Make CQ WW VHF into two contests, CW/SSB and Digital. (SM7IUN, TNX N2NC)
+- Enable hamscore.com support for Weekly RTTY Contest. (SM7IUN, TNX VA2WA)
+- Mark a number of inactive contests as legacy contests. (SM7IUN)
+- Fix issue with software interlock persistence. (SM7IUN)
+- Fix minor issue with display of sent text. (SM7IUN)
+- Update bonus stations for ACQP. (SM7IUN, TNX VE2FK)
+- Cosmetic improvements to Summary window. (SM7IUN)
+- Cosmetic improvements to Interface configuration window. (SM7IUN)
+- Include 6 and 4m in Region 1 band plans. (SM7IUN, TNX OH6XX)
+- Renew selection when deleting one of several spots on same frequency. (SM7IUN)
+- Make Ctrl-Space always grab selected spot. (SM7IUN)
+- Add Riachuelo Contest. (SM7IUN, TNX PS7DX)
+- Make "first row only" digital modes keys work also with floating windows. (K6PO)
+- Don't prefill callsign when returning to CQ frequecy with Alt-F4. (K6PO)
+- Add AGC control for SDRPlay spectrum sources. (K6PO)
+- Fix bug in PSK frequency alignment. (K6PO)
+- Improve spanish translation. (EA4AC)
+- Reduce lead time for stopping CW keying when repeat is enabled. (SM7IUN, TNX K1GQ)
+- Add support for highlighting spots from preferred spotters. (SM7IUN)
+- Change indication of QSX spot from leading asterisk to delta. (SM7IUN)
+- Improve handling of QSX spots, including inheritance of QSX, and also recognize "UP" in comment. (SM7IUN)
+- Disable split if required when grabbing a non-QSX spot in SO2V. (SM7IUN)
+- Add option to prevent transmission when outside of frequency allocation. (K1XM, TNX LZ5DB)
+- Allow up to three IP addresses for UDP broadcast information. (SM7IUN, TNX K1XM)
+- Fix split band operation for Yaesu FTDX101, FTDX10, and FT-710. (SM7IUN, TNX M0JWT)
+- Don't score QSO with county line stations as multiple QSO in NEQP. (SM7IUN, TNX K1XM)
+- Don't crash if radio information broadcast is enabled and no network adapter is available. (SM7IUN)
+- Fix crash in World map. (SM7IUN, TNX E77DX)
+- Improve CW keyer performance. (K1XM)
+- Send "SINFO" message if antenna server is configured, even network is not configured. (K1XM)
+
+Ver 2.6.16
 ------------------------
 - Update a large number of database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
 - Introduce strict syntax checking of contest definition files. (SM7IUN)
