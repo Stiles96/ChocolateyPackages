@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>10.0.261000</version>
+    <version>10.0.26100</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann</owners>
@@ -52,9 +52,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>win11upgrade windows upgrade</tags>
     <summary>Upgrades your current installed Windows with Windows 11</summary>
     <description>
-Installs Windows from a local resource. Some restarts are required after installation. This setup takes more than an hour.
-
-Installs Windows 11 24H2 from local GPO Fileshare.
+Installs Windows 11. Some restarts are required after installation. This setup takes more than an hour.
 
 ## Used Parameters
 `/Auto Upgrade` - Runs an upgrade with all user data and programs\
@@ -67,11 +65,9 @@ Installs Windows 11 24H2 from local GPO Fileshare.
 ## Package Parameters
 More info: https://learn.microsoft.com/de-de/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11
 
-`/1394Debug` - Enables kernel debugging over an IEEE 1394 (FireWire) port while Windows is running and during the WindowsPE configuration pass of Windows Setup.\
 `/AddBootMgrLast` - Instructs Windows Setup to add the Windows Boot Manager as the last entry in the UEFI firmware boot order.\
 `/Auto` - Performs an automated upgrade to a newer version of Windows.ß
 `/BitLocker` - Specifies the BitLocker status during upgrades.\
-`/BusParams` - Specifies the PCI address of a 1394, USB, or NET debug port.\
 `/ConfigFile` - Specifies the location to the setupconfig file.\
 `/CompactOS` - Specifies whether to use the Compact OS feature to save hard drive space.\
 `/Compat` - Instructs Windows Setup how to handle compatibility scans and messages.\
@@ -79,14 +75,9 @@ More info: https://learn.microsoft.com/de-de/windows-hardware/manufacture/deskto
 `/Debug` - Enables kernel debugging over a communications (COM) port when Windows is running, and during the WindowsPE configuration pass of Windows Setup.\
 `/DiagnosticPrompt` - Specifies that the Command Prompt is available during Windows Setup.\
 `/DynamicUpdate` - Specifies whether Windows Setup will perform Dynamic Update operations (search, download, and install updates).\
-`/EMSPort` - Enables or disables Emergency Management Services (EMS) during Windows Setup and after the server operating system has been installed.\
 `/EULA` - Instructions Windows Setup to suppress the Windows Setup end user license agreement user experience.\
 `/Finalize` - Instructions Windows Setup to finish previously started update operations on the down-level OS, followed by an immediate reboot to start the offline phase.\
-`/ImageIndex` - Instructions Windows Setup which OS image to install from install.wim if multiple images may be applicable.\
 `/InstallDrivers` - Adds .inf-style drivers to the new Windows 10 installation.\
-`/InstallFrom` - Specifies a different Install.wim file to use during Windows Setup.\
-`/InstallLangPacks` - Adds language packs (lp.cab) to the new Windows 10 or above installation.\
-`/m` - Instructs Windows Setup to copy alternate files from an alternate location. This option instructs Windows Setup to look in the alternate location first, and, if files are present, to use them instead of the files from the default location.\
 `/MigNEO` - Tells Windows Setup to perform an upgrade of Windows without additional offline phase optimizations.\
 `/MigrateDrivers` - Instructs Windows Setup whether to migrate the drivers from the existing installation during the upgrade.\
 `/NetDebug` - Enables kernel debugging over the network.\
@@ -96,17 +87,12 @@ More info: https://learn.microsoft.com/de-de/windows-hardware/manufacture/deskto
 `/PostOOBE` - After Windows Setup is complete, run a script.\
 `/PostRollback` - Instructs Windows Setup to run a script if the feature update fails to install and rolls back the changes, or if the user chooses to uninstall the feature update and go back to a previous version of Windows.\
 `/Quiet` - This will suppress any Windows Setup user experience including the rollback user experience.\
-`/ReflectDrivers` - Specifies the path to a folder that contains encryption drivers for a computer that has third-party encryption enabled.\
 `/ResizeRecoveryPartition` - Specifies whether it's OK to resize the existing Windows Recovery Environment (Windows RE) partition or create a new one during installation.\
 `/ShowOOBE` - Specifies whether the user is required to interactively complete the out of box experience (OOBE).\
 `/SkipFinalize` - Instructions setup to start update operations on the down-level OS without initiating a reboot to start the offline phase.\
 `/Telemetrie` - Specifies whether Windows Setup should capture and report installation data.\
-`/TempDrive` - Instructs Windows Setup to put temporary installation files on the specified partition.\
 `/Unattend` - Enables you to use an answer file with Windows Setup.\
 `/Uninstall` - Determines whether Windows will include controls that allow the user to go back to the previous operating system.\
-`/USBDebug` - Sets up debugging on a USB port.\
-`/WDSDiscover` - Specifies that the Windows Deployment Services (WDS) client should be in discover mode.\
-`/WDSServer` - Specifies the name of the Windows Deployment Services (WDS) server that the client should connect to.\
 </description>
     <releaseNotes>
 

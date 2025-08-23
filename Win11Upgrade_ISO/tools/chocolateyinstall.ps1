@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'ISO_EMBEDDED_IN_PACKAGE'
-$url = "https://software.download.prss.microsoft.com/dbazure/Win11_24H2_German_x64.iso";
+$url = "https://securedl.chip-downloads.de/downloads/126531758/Win11_24H2_German_x64.iso"; #Using MS URL failed of session token, only valid for 24h
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
