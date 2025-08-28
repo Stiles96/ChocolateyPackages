@@ -37,13 +37,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Win 11 Upgrade</title>
     <authors>Microsoft Corporation</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.microsoft.com/de-de/windows/get-windows-11</projectUrl>
+    <projectUrl>https://www.microsoft.com/en-us/windows/get-windows-11</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <!-- Here is an example using Githack -->
     <iconUrl>https://365cloudstore.com/wp-content/uploads/2023/02/windows-11-500x500-01.png</iconUrl>
     <copyright>2024 Microsoft Corporation</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://www.microsoft.com/de-de/windows/get-windows-11</licenseUrl>
+    <licenseUrl>https://www.microsoft.com/en-us/windows/get-windows-11</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
@@ -63,7 +63,7 @@ Installs Windows 11. Some restarts are required after installation. This setup t
 `/compat ignorewarning` - Ignore Warnings
 
 ## Package Parameters
-More info: https://learn.microsoft.com/de-de/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11
+More info: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11
 
 `/AddBootMgrLast` - Instructs Windows Setup to add the Windows Boot Manager as the last entry in the UEFI firmware boot order.\
 `/Auto` - Performs an automated upgrade to a newer version of Windows.ß
