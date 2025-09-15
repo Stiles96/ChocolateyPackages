@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.19</version>
+    <version>2.6.20</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,59 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.19
+    <releaseNotes>Ver 2.6.20
+------------------------
+- Update driver for Yaesu FTX-1F. (SM7IUN)
+- Enable county suffix exchange extraction for all NA QSO parties. (SM7IUN)
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Increase robustness of DVK control for Kenwood TS-570S, TS-480SAT, TS-480HX, and TS-2000. (SM7IUN)
+- Update NAC V/U/SHF and NAC Open contest definitions. (SM7IUN, TNX SM7KOJ)
+- Move NAC MGM to legacy contest category. (SM7IUN)
+- Update scoring for MDCQP. (SM7IUN)
+- Remove band change limitations for RSGB IOTA. (SM7IUN, TNX OK1DSZ)
+- Allow +, -, and $ in $CAT commands. (SM7IUN, TNX SQ2GXO)
+- Fix issue with CW prosigns AR and SK. (SM7IUN)
+- Fix multiple issues with using F-key messages in keyboard mode. (SM7IUN)
+- Fix issue with + and - characters in messages in digital modes. (SM7IUN)
+- Fix issues with +, -, ~, and ^ in messages with simulator. (SM7IUN)
+- Fix issue with ~ between macro command and letters in standard messages. (SM7IUN)
+- Fix issue with $13 stopping display of sent text. (SM7IUN)
+- Fix mouse wheel related crash in worked gridsquares window. (SM7IUN, TNX G4PIQ)
+- Add missing options to TCP port radio configuration. (SM7IUN, TNX YO3HEX)
+- Fix crash in QTC receive window. (SM7IUN, TNX SV1DPJ)
+- Add ARRL Rookie Roundup. (SM7IUN)
+- Fix silent multipliers in statistics window. (SM7IUN, TNX F1EZG)
+- Fix crash when copying worked DXCC window as text and log contains /MM stations. (SM7IUN, TNX OH6XX)
+- Update CVA DX Contest to 2025 rules. (SM7IUN, TNX PY4XX)
+- Do not ask to update DXLog for 48 hours after declining. (SM7IUN, TNX K5GN)
+- Make update of worked multipliers at radio change the installation default. (SM7IUN, TNX NN7CW)
+- Fix issue with Ten-Tec Orion driver. (SM7IUN, TNX PA3AAV)
+- Update default cluster list. (SM7IUN, TNX DL1MGB)
+- Allow self spotting in TNQP. (SM7IUN, TNX K1RX)
+- Recognize invalid exchange NWT (used by N1MM) as NT in OHQP. (SM7IUN)
+- Add local French contest Recontres UFT. (SM7IUN, TNX F6EEQ)
+- Improve prefill mechanics for many North American QSO parties. (SM7IUN)
+- Remove a number of "old" radio drivers. (SM7IUN)
+- Fix dupe type PER_BAND_MODE_RCVD_DAY and add dupe type PER_BAND_MODE_DAY. (SM7IUN)
+- Add SSA 100 Year Anniversary. (SM7IUN, TNX SM0HEV)
+- Make contest definition syntax checking optional and disabled by default. (SM7IUN)
+- Add category CONT: and values $DXCC, $CONT, $CQZONE, and $ITUZONE for use in regular expression defined prefill. (SM7IUN)
+- Display an error message when a serial number reservation request is not served within one second. (SM7IUN, TNX DF9TS)
+- Make $SERIAL and $SERIALNOAB send nothing if the serial number is 0 (i.e. invalid). (SM7IUN, TNX DF9TS)
+- Fix crash when changing desktop colors at first use. (SM7IUN, TNX DL7NX)
+- Update prefill and entry mechanics for a lot of North American QSO parties. (SM7IUN)
+- Update multipliers in WAQP. (SM7IUN, TNX K8MR)
+- Improve world map performance when own spots are displayed. (K1XM)
+- Add CQZONE as valid value for CFG_MULT_FROM. (SM7IUN)
+- Improve performance when writing configuration information. (K1XM, TNX KL9A)
+- Add options to search for support using Google and Perplexity AI. (SM7IUN, TNX N1MM)
+- Fix minor issue with operator in ADIF export. (SM7IUN)
+- Add Piper support. (M1DST)
+- Add information about period change method in contest configuration window. (SM7IUN, TNX LZ2HT)
+- Convert new RAC section YT/YUK for Yukon Territory to TER in NVQP and PAQP when logging. (SM7IUN, TNX N1MM)
+- Convert NF and LB to NL in a NA QSO parties with 13 Canadian multipliers when logging. (SM7IUN, TNX N1MM)
+
+Ver 2.6.19
 ------------------------
 - Add automatic formatting of RECINFO log field for some exchange types. (SM7IUN)
 - Fix setting Stream background color in digital decoder windows (K6PO, TNX WT2P)
