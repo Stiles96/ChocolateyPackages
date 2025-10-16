@@ -1,26 +1,28 @@
-﻿$ErrorActionPreference = 'Stop'
+﻿
+$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'ISO_EMBEDDED_IN_PACKAGE'
-$url = "https://jCHTajW2dbkkmWt:ChocoWin11DE@cloud.he-it.eu/public.php/webdav"; #Using MS URL failed of session token, only valid for 24h
+$fileLocation = '\\Zuhause.local\data\GPO\Programme\Win11EN\setup.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  file          = "setup.exe"
   fileType      = 'exe'
   url           = $url
-  isofile       = $fileLocation
+  url64bit      = $url64
+  file         = $fileLocation
 
   softwareName  = 'Win11Upgrade*'
 
   checksum      = ''
   checksumType  = 'sha256'
+  checksum64    = ''
+  checksumType64= 'sha256'
 
   silentArgs   = '/Auto Upgrade /quiet /eula accept /telemetry disable /diagnosticprompt enable /compat ignorewarning'
   validExitCodes= @(0, 3)
 }
 
-Install-ChocolateyIsoPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
 
 
 
