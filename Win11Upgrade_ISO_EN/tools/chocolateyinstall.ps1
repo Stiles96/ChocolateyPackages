@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'ISO_EMBEDDED_IN_PACKAGE'
-$url = "https://jCHTajW2dbkkmWt:ChocoWin11DE@cloud.he-it.eu/public.php/webdav"; #Using MS URL failed of session token, only valid for 24h
+$url = "https://wiki.he-it.eu/public-uploads/Win11_25H2_English_x64.iso"; #Using MS URL failed of session token, only valid for 24h
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
