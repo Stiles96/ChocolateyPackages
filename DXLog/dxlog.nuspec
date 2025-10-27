@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.20</version>
+    <version>2.6.21</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,45 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.20
+    <releaseNotes>Ver 2.6.21
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Update a number of contest definitions. (SM7IUN)
+- Add workaround also in Xiegu G106 driver while waiting for corrected radio firmware. (SM7IUN, TNX M0CKE)
+- Fix grabbing spot with first exchange element guess extracted from comment. (SM7IUN)
+- Let exchange information extracted from cluster spot comments override other prefill including previous QSO. (SM7IUN)
+- Make local spots remember entered exchange information. (SM7IUN)
+- Let newer spots of same call inherit exchange information entered or extracted in older spots. (SM7IUN)
+- Do not overwrite exchange for local spots with prefill data. (SM7IUN)
+- Do not display callsign county suffix in bandmap to guarantee correct dupe status and to 
+  ensure replacement of outdated spots. (SM7IUN)
+- Change spot exchange prefill guess precedence to 
+  operator entered - callsign extracted - comment extracted - inherited - table based - rule based - default. (SM7IUN)
+- Add contest definition helper function ExtendCountyLine to support abbreviated county line exchanges (e.g., MABAR/BER) in QSO parties. (SM7IUN)
+- Add contest definition helper function Canada13 to convert NF and LB to NL but not ALBA to ANLA. (SM7IUN)
+- Don't crash on bad syntax in FX keys in contest definitions. (SM7IUN)
+- Add reduced stutter option for LPT and serial CW keying. (K1XM)
+- Make "F1 key forces Run mode" apply also to Shift-Ctrl-F1. (SM7IUN)
+- Fix Own spot information window for split operation in SO1R. (SM7IUN)
+- Fix Canadian multipliers in MSQP. (SM7IUN)
+- Do not force the radio's mode at period transitions unless periods have specified modes. (SM7IUN, TNX ES7GM)
+- Add tooltip to Self-spot menu item. (SM7IUN)
+- Update standard messages in some 80 contests to avoid double or trailing spaces. (SM7IUN)
+- Add CAT frequency timestamp for future use. (SM7IUN)
+- Only save invariant exchanges in local spot when logging in S and P. (SM7IUN)
+- Allow self spotting in TXQP. (SM7IUN, TNX WB0TEV)
+- Make minimum off time in All Asian DX Contest 60 minuts. (SM7IUN)
+- Handle semi optional station identifier in Cabrillo in import. (SM7IUN, TNX DK8ZZ)
+- Fix online scoring and Canadian exchanges for CQ WW RTTY. (SM7IUN, TNX K6PO)
+- Add UK BOTA activation. (SM7IUN, TNX M0CKE)
+- Make Exchange information window honor leading zeros setting when displaying serial number. (SM7IUN, TNX OK2ZI)
+- Set focus when grabbing spot with double click when Double-click activates radio and Enable single click selection are enabled. (K1XM, TNX AK1MD)
+- Make total score CToSc per band/file in EDI export. (SM7IUN, TNX SM7KOJ)
+- Do not ALIGN at startup in digital modes. (SM7IUN, TNX K6PO)
+- Update Oceania DX Contest to 2025 rules. (SM7IUN)
+- Fix RIT for Yaesu FT-710. (SM7IUN, TNX SO7NA)
+
+Ver 2.6.20
 ------------------------
 - Update driver for Yaesu FTX-1F. (SM7IUN)
 - Enable county suffix exchange extraction for all NA QSO parties. (SM7IUN)
