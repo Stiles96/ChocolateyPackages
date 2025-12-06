@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.21</version>
+    <version>2.6.23</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,26 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.21
+    <releaseNotes>Ver 2.6.23
+------------------------
+- Fix for problem with WAE RTTY QTCs. (K1XM, TNX PG7M)
+- Fix problem with $CAT in SO2R. (SM7IUN)
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+
+Ver 2.6.22
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Update a lot of North American QSO party contest definitions with helper functions Canada13 and ExtendCountyLine. (SM7IUN)
+- Add and use contest definition expression CONFIG->ARRLRR to make ARRL Rookie Roundup contest definition time independent. (SM7IUN)
+- Add driver for TS-480 with support for DVK audio via microphone jack. (SM7IUN, TNX DA1EE)
+- Fix CAT PTT and keyboard RIT for Kenwood TS-870. (SM7IUN)
+- Rework the SCP and N+1 to increase performance. (M1DST, TNX M0VFC)
+- Fix multiplier display for contests with multiplier in third or fourth exchange element. (SM7IUN, TNX K6PO)
+- Update CQ Bande Basse Italia with 2012 Sardinian license plate codes. (SM7IUN, TNX IS0BZR)
+- Add contest definition key FIELD_DISPLAYED_EXCHANGE to control exchange displayed in bandmap. (SM7IUN, TNX K6PO)
+- Make exchange display in bandmap more relevant for some 36 contests. (SM7IUN))
+
+Ver 2.6.21
 ------------------------
 - Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
 - Update a number of contest definitions. (SM7IUN)
