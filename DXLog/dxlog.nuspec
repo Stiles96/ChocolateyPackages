@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.23</version>
+    <version>2.6.24</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,38 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.23
+    <releaseNotes>Ver 2.6.24
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
+- Update Cabrillo contest name for Ham Spirit Contest. (SM7IUN)
+- Fix issue with login username for contest.run. (SM7IUN, TNX R4WW)
+- Enable use of data modes for DVK playback with OmniRig. (SM7IUN, TNX YL3OI)
+- Fix problem with network abort sending when interlock is not used. (K1XM, TNX ES5TV)
+- Expand RIT range for QRP Labs QCX and QMX. (SM7IUN)
+- Update prefill and rules for some local YU contests. (SM7IUN)
+- Fix MGM mode in EDI export. (SM7IUN, TNX SM4HFI)
+- Update frequency warnings for DARC Training Contest. (SM7IUN, TNX DL6RY)
+- Fix SJV exchange in ARRL 160m Contest. (SM7IUN, TNX N6KI)
+- Improve EDI import and export including the addition of Section. (SM7IUN)
+- Fix NONE for location in ARRL 10m. (SM7IUN, TNX LX1NO)
+- Improve prefill for ARRL FD and WFD. (SM7IUN)
+- Add double click activates radio option for DX cluster announce window. (K1XM, TNX AK1MD)
+- Initialize QSO (F11, Alt-W) remembers and retrieves the deleted callsign. (K1XM, TNX SQ9ORQ)
+- Fix contest menu Delete in Partner window. (SM7IUN, TNX IK2NCJ)
+- Disable QSY information for some 30 other single band contests. (SM7IUN, TNX K6PO)
+- Improve prefill LABRE QRS and CVA DX contests. (SM7IUN)
+- Add option to show erased callsigns in clock window. (K1XM)
+- Add Tab to list of keys possible to map other key combinations to. (SM7IUN, TNX SP5KP)
+- Add S53M DX Cluster. (E71DX, TNX S53M)
+- Improve rendering performance. Moving docked windows should be much smoother - especially on larger screens. (E71DX)
+- Update scoring for bonus stations in NTC QP. (SM7IUN)
+- Fix exchange length in MCD QP. (SM7IUN, TNX IK2JUB)
+- Update several RSGB VHF contests. (SM7IUN, TNX G4CLA)
+- Improve prefill for Canadian stations in several QSO parties. (SM7IUN)
+- Fix problems with keyboard redefinitions involving tab key. (K1XM)
+- Update 2026 rules for WFD. (SM7IUN, TNX KY4LV)
+
+Ver 2.6.23
 ------------------------
 - Fix for problem with WAE RTTY QTCs. (K1XM, TNX PG7M)
 - Fix problem with $CAT in SO2R. (SM7IUN)

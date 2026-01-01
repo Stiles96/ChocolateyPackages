@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://dxlog.net/sw/files/DXLog.net-2.6.23.msi'
-$url64      = 'https://dxlog.net/sw/files/DXLog.net-2.6.23.msi'
+$url        = 'https://dxlog.net/sw/files/DXLog.net-2.6.24.msi'
+$url64      = 'https://dxlog.net/sw/files/DXLog.net-2.6.24.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +13,9 @@ $packageArgs = @{
 
   softwareName  = 'DXLog*'
 
-  checksum      = '7CCE5DAFEBEB56FE1E971F32C5F66AA39199ECD3B1DD0D69E93CE01E7A18F338'
+  checksum      = '876D537863F58BFC734361ADA2D719C0E8446533F677866A3EF5E518364AD792'
   checksumType  = 'sha256'
-  checksum64    = '7CCE5DAFEBEB56FE1E971F32C5F66AA39199ECD3B1DD0D69E93CE01E7A18F338'
+  checksum64    = '876D537863F58BFC734361ADA2D719C0E8446533F677866A3EF5E518364AD792'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
