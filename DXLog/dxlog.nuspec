@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.24</version>
+    <version>2.6.25</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,41 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.24
+    <releaseNotes>Ver 2.6.25
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, OM6ABF, W9KKN, and DJ5CW)
+- Set size and position correctly for the ON4KST chat window. (K1XM, TNX G4BWP)
+- Add option to post score via UDP in parallel with online score board. (SM7IUN, TNX SV1DPJ)
+- Add element "runqso" to QSO XML broadcast in DXLog format. (SM7IUN, TNX K1XM)
+- Improve prefill for CWOps CWT. (SM7IUN)
+- Update Cabrillo names for RAC Canada Day and Canada Winter Contests. (SM7IUN, TNX WB0TEV)
+- Add RTC Contest. (SM7IUN, TNX VA2WA)
+- Fix $WIPENORETRIEVE, add $QSOB4WIPENORETRIEVE. (K1XM, TNX SP5KP)
+- Move RSGB M1 and M4 VHF contests to legacy category. (SM7IUN, TNX G4CLA)
+- Remove prefill files for a number of legacy contests. (SM7IUN)
+- Make it possible to mark stations as ineligible in contests with QRB-based scoring. (SM7IUN)
+- Update COQP to 2026 rules. (SM7IUN, TNX K0AV)
+- Fix HamQTH lookup. (SM7IUN, TNX LX1NO)
+- Improve prefill for a lot of North American QSO parties. (SM7IUN)
+- Add option to allow or exclude QSO not matching own station call in ADIF import. (SM7IUN, TNX OH6XX)
+- Add text command IMPORT for ADIF import. (SM7IUN)
+- Make FrmMain.SetCQFreq public and available for scripting. (SM7IUN, TNX SP5KP)
+- Remove $WIPENORETRIEVE, $QSOB4WIPENORETRIEVE, add $WIPERETRIEVE, $QSOB4WIPERETRIEVE. (K1XM)
+- Add option to turn retrieve on and off for Initialize QSO (F11, Alt-W). (K1XM, TNX N4YDU)
+- Update CQ Bande Basse Italia Cabrillo format and multipliers. (SM7IUN, IU4AZC)
+- Set SO2R box state after SETUP or RESET. Don't send OTRSP X0/X1 unless PTT is configured. (K1XM, TNX YO3HEX)
+- Remove unnecessary nesting in Commands->Live score menu. (SM7IUN)
+- Consolidate four character grid prefill files (Stew Perry, Tesla Memorial, CQ VHF, etc.). (SM7IUN)
+- Add support for ICOM IC-7300MK2. (SM7IUN)
+- Add N2WQ-2 to DX cluster node list. (SM7IUN, TNX N2WQ)
+- Update EU DX Contest to 2026 rules. (SM7IUN)
+- Fix dupe rule in PRO Digi Contest. (SM7IUN, TNX IK2FTB)
+- Improve robustness of telnet spot parsing. (SM7IUN)
+- Add recognition and display of N2WQ spot propagation tags. (SM7IUN, TNX N2WQ)
+- Fix minor issue with own DXCC and Cabrillo import. (SM7IUN)
+- Fix issue with conditional exchange types over network. (SM7IUN, TNX F6BGC)
+
+Ver 2.6.24
 ------------------------
 - Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, W9KKN, and DJ5CW)
 - Update Cabrillo contest name for Ham Spirit Contest. (SM7IUN)

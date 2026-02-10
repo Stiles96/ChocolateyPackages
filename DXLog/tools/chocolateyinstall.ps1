@@ -1,8 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://dxlog.net/sw/files/DXLog.net-2.6.24.msi'
-$url64      = 'https://dxlog.net/sw/files/DXLog.net-2.6.24.msi'
+$filename = 'DXLog.net-2.6.25.msi'
+$checksum = 'B0FF811568EE8D7958FAEDEE0083A21987191A6BB2DDC73CA9BDDCC89BC7052A'
+$RootURL =  'https://dxlog.net/sw/files/'
+$oldUrl =   'https://dxlog.net/sw/files/download/old/'
+
+# Latest version of DXLog is available at https://dxlog.net/sw/files/download/
+$url        = $RootURL + $filename
+$url64      = $RootURL + $filename
+
+$request = Invoke-WebRequest -Uri $url -Method Head
+if (!$request)
+{
+  # Previous versions of DXLog are available at https://dxlog.net/sw/files/download/old/
+  $url        = $oldUrl + $filename
+  $url64      = $oldUrl + $filename
+}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +27,9 @@ $packageArgs = @{
 
   softwareName  = 'DXLog*'
 
-  checksum      = '876D537863F58BFC734361ADA2D719C0E8446533F677866A3EF5E518364AD792'
+  checksum      = $checksum
   checksumType  = 'sha256'
-  checksum64    = '876D537863F58BFC734361ADA2D719C0E8446533F677866A3EF5E518364AD792'
+  checksum64    = $checksum
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
@@ -23,4 +37,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-
