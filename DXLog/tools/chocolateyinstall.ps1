@@ -10,9 +10,9 @@ $oldUrl =   'https://dxlog.net/sw/files/download/old/'
 $url        = $RootURL + $filename
 $url64      = $RootURL + $filename
 
-try 
+try
 {
-  $request = Invoke-WebRequest -Uri $url -Method Head
+  $request = Invoke-WebRequest -Uri $url -Method Head -UseBasicParsing
 }
 catch
 {
