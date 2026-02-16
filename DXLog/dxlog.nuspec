@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.25</version>
+    <version>2.6.26</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,50 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.25
+    <releaseNotes>Ver 2.6.26
+------------------------
+- Fix scoring for TO and TX stations in REF. (SM7IUN, TNX F6BGC)
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, OM6ABF, W9KKN, and DJ5CW)
+- Fix display of talk messages in Gab window. (SM7IUN)
+- Improve robustness of mode determination from spot comments. (SM7IUN)
+- Make HamQTH lookup disregards variations in server XML namespace response. (SM7IUN, TXN LX1NO)
+- Add NOTHING and ' for literal string to list of valid keywords for LIVESCORE_RTC_SENT_EXCHANGE. (SM7IUN)
+- Enable Real Time Contest for MNQP. (SM7IUN, TNX VA2WA)
+- Recognize lower case grids in N2WQ cluster spot comments. (SM7IUN)
+- Harmonize displayed spot quality tags across AR 6, DXSpider, and N2WQ clusters. (SM7IUN)
+- Fix issues with some announcements not being passed on by DXLog.net.DXC. (SM7IUN)
+- Allow / in DXLog.net.DXC blacklist callsigns. (SM7IUN)
+- Prevent Ctrl-Delete from retrieving deleted callsigns. (SM7IUN)
+- Show MAN instead of most recent message ID in Network status window during manual transmission. (SM7IUN)
+- Fix issue with Ctrl-Delete missing some calls in bandmap. (SM7IUN)
+- Fix broken EDI export for HA_VHF_IFI, URH_OB_CW, URH_OB_SSB, URH_OB_MIX, and Zagreb FM contests. (SM7IUN, TNX HA3LN)
+- Make EDI export configuration window recognize Enter and Escape keys. (SM7IUN)
+- Correct definition of 70cm band to 420-450MHz. (SM7IUN, TNX KK0U)
+- Add warning text to DX cluster monitor title bar when spots are ignored. (SM7IUN, TNX M0MDR)
+- Add S50CLX to and remove SM6HOC from default cluster list. (SM7IUN, TNX S50U)
+- Fix issue with blacklisting being always enabled in DXLog.Net.DXC. (SM7IUN)
+- Fix issue with certain FT8 spots being ignored. (SM7IUN)
+- Do not show K1JT mode spots in bandmap thermometer view. (SM7IUN)
+- Mark recognized beacon spots in bandmap with a trailing /B. (SM7IUN)
+- Always show beacon spots in bandmap thermometer view but as unworkable. (SM7IUN)
+- Never show beacon spots in bandmap list view. (SM7IUN)
+- Do not show additional information (guessed exchange, etc.) for beacon spots in bandmap. (SM7IUN)
+- Do not show or count beacon spots in DX cluster announcement window. (SM7IUN)
+- Fix issue with callsign DXCC entity determination and stacked suffixes. (SM7IUN)
+- Update range of 60m band in default bandplan to 5250-5450kHz. (SM7IUN)
+- Add Marconi Club Slow CW QSO Party. (SM7IUN, TNX IK2JUB)
+- Add North American SSB Sprint and rename NA Sprint to North American Sprint. (SM7IUN, TNX N9RV)
+- Update XE RTTY to 2026 rules and add prefill file. (SM7IUN)
+- Make hiding dupes and unworkable stations in bandmap list view the installation default. (SM7IUN)
+- Allow self spotting in UKEICC 80m contests. (SM7IUN, TNX G4MEM)
+- Fix issue with spots not being correctly highlighted in bandmap when tuning VFO. (SM7IUN)
+- Slightly improve alignment of spot text with marker line in bandmap. (SM7IUN)
+- Fix error in EUDXC multiplier list. (SM7IUN, TNX Z32TO)
+- Update FOC Marathon to accept 0000. (SM7IUN, TNX G4IRN)
+- Add contest definition key CONTEST_INFORMATION, "Info" button in Contest configuration window, and menu item Help->Contest information. (SM7IUN)
+- Add contest information to some contests. (SM7IUN)
+
+Ver 2.6.25
 ------------------------
 - Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, OM6ABF, W9KKN, and DJ5CW)
 - Set size and position correctly for the ON4KST chat window. (K1XM, TNX G4BWP)

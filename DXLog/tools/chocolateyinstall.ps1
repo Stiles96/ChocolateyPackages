@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$filename = 'DXLog.net-2.6.25.msi'
-$checksum = 'B0FF811568EE8D7958FAEDEE0083A21987191A6BB2DDC73CA9BDDCC89BC7052A'
+$filename = 'DXLog.net-2.6.26.msi'
+$checksum = '2ADDD0E1856A76AD9962D12B9897AD21505725C9E6632977425A48D09ECB7882'
 $RootURL =  'https://dxlog.net/sw/files/'
 $oldUrl =   'https://dxlog.net/sw/files/download/old/'
 
@@ -10,10 +10,12 @@ $oldUrl =   'https://dxlog.net/sw/files/download/old/'
 $url        = $RootURL + $filename
 $url64      = $RootURL + $filename
 
-$request = Invoke-WebRequest -Uri $url -Method Head
-if (!$request)
+try 
 {
-  # Previous versions of DXLog are available at https://dxlog.net/sw/files/download/old/
+  $request = Invoke-WebRequest -Uri $url -Method Head
+}
+catch
+{
   $url        = $oldUrl + $filename
   $url64      = $oldUrl + $filename
 }
