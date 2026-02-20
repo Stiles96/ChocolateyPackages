@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.26</version>
+    <version>2.6.27</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Patrick Henkelmann, DC9PA</owners>
@@ -55,7 +55,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 The software is free of charge, donated to the ham radio community by
 Krassy K1LZ and a small team donating their time and effort. </description>
-    <releaseNotes>Ver 2.6.26
+    <releaseNotes>Ver 2.6.27
+------------------------
+- Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, OM6ABF, W9KKN, and DJ5CW)
+- Allow self spotting in PACC. (SM7IUN, TNX M0KYB)
+- Add local LZ contest "Vasili Levski". (SM7IUN, TNX K1LZ)
+- Move LZ HF Field 40m to legacy contests. (SM7IUN)
+- Ignore bandmap when cluster spot comment contains unambigous mode information. (SM7IUN)
+- Make the first period of LZ Championship start in the current hour, not at 15Z. (SM7IUN, TNX LZ1XA)
+- Don't crash if unable to save summary text to clipboard. (K1XM, TNX DA1DX)
+
+Ver 2.6.26
 ------------------------
 - Fix scoring for TO and TX stations in REF. (SM7IUN, TNX F6BGC)
 - Update a large number of prefill database files. (SM7IUN, TNX VE2FK, AD1C, OM6ABF, W9KKN, and DJ5CW)

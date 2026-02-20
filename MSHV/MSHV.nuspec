@@ -29,7 +29,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <version>2.76.4</version>
     <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>Patrick Henkelmann</owners>
+    <owners>Patrick Henkelmann, DC9PA</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->

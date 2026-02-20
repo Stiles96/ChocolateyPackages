@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$filename = 'DXLog.net-2.6.26.msi'
-$checksum = '2ADDD0E1856A76AD9962D12B9897AD21505725C9E6632977425A48D09ECB7882'
+$filename = 'DXLog.net-2.6.27.msi'
+$checksum = '2AD48BE080A8B8268E7A18D8465EE865D40479A3EA43E168E111768B24C90859'
 $RootURL =  'https://dxlog.net/sw/files/'
 $oldUrl =   'https://dxlog.net/sw/files/download/old/'
 
