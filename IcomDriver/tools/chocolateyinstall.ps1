@@ -10,7 +10,7 @@ $packageArgs = @{
   file          = "$toolsDir\IcomDriver\CD-301501-003\Driver\CP210xVCPInstaller_x86.exe"
   softwareName  = 'ICOM*'
 
-  silentArgs    = "/S"
+  silentArgs    = "/S /SE"
   validExitCodes= @(0, 3010, 1641)
 }
 
@@ -24,8 +24,9 @@ $zipPackageArgs = @{
 }
 
 Install-ChocolateyZipPackage @zipPackageArgs
-#Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
 
+<#
 if ([Environment]::Is64BitOperatingSystem)
 {
   # x64
@@ -36,3 +37,4 @@ else
   # x86
   Copy-Item -Path "$toolsDir\IcomDriver\CD-301501-003\Driver\x86\silabser.sys" -Destination "$env:WINDIR\SysWOW64\drivers\silabser.sys" -Force
 }
+#>
