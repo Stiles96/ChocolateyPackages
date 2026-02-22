@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>VPSE - Virtaual Serial Port Emulator</title>
+    <title>VSPE - Virtaual Serial Port Emulator</title>
     <authors>Eterlogic Software</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://eterlogic.com/Products.VSPE.html</projectUrl>
