@@ -39,3 +39,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+

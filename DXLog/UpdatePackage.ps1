@@ -88,6 +88,6 @@ if ($latestVersion -ne $currentVersion)
     $content = $content -replace '\$checksum = .+', "`$checksum = '$($checksum.Hash)'"
     Set-Content $installScriptPath $content
 
-    choco pack $nuspecfile
-    Copy-Item $nugetpack $RepoFolder
+    choco pack $nuspecfile -out $Basedir
+    ../autopush.ps1 $nugetpack;
 }
