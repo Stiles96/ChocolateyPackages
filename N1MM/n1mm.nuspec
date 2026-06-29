@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>n1mm</id>
+    <version>1.0.11031</version>
+    <title>N1MM Logger+</title>
+    <authors>Tom, N1MM</authors>
+    <owners>Patrick Henkelmann, DC9PA</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://n1mmwp.hamdocs.com/mmfiles</projectUrl>
+    <iconUrl>https://n1mmwp.hamdocs.com/wp-content/uploads/N1MMLoggerPlus394x120.jpg</iconUrl>
+    <description>N1MM Logger is the world’s most popular ham radio contest logging program. For CW, phone and digital modes, its combination of contest-optimized features is unmatched.</description>
+    <summary>N1MM Logger+</summary>
+    <tags>n1mm logger</tags>
+    <packageSourceUrl>https://github.com/Stiles96/ChocolateyPackages</packageSourceUrl>
+    <docsUrl>https://n1mmwp.hamdocs.com/n1mm-logger-documentation/manual-at-a-glance/</docsUrl>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
