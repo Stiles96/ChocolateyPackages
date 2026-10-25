@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$filename = 'DXLog.net-2.6.32.msi'
-$checksum = '86B8173070AE4F985A28BD7CC77802A9E9F2EDE0DFFC9A18D7E9AA905D4076D6'
+$filename = 'DXLog.net-2.6.38.msi'
+$checksum = '2A0825DE78C0BD643B4D0F0DFF9E9342B446F2DEA4E5497BAE6FFA589F2BE075'
 $RootURL =  'https://dxlog.net/sw/files/'
 $oldUrl =   'https://dxlog.net/sw/files/download/old/'
 
@@ -39,5 +39,7 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+
 
 
