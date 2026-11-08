@@ -46,7 +46,6 @@ function Write-XML
 }
 
 $nuspecfile = $($Basedir + "\" + $AppName + ".nuspec")
-$nugetpack = $($Basedir + "\" + $AppName + ".nupkg")
 
 $xml = Read-Xml -FilePath $nuspecfile
 
@@ -60,6 +59,7 @@ if ($latestVersion -ne $currentVersion)
     $xml.package.metadata.version = $latestVersion;
     Write-XML -FilePath $nuspecfile -doc $xml
 
-    choco pack $nuspecfile
+    $nugetpack = $($Basedir + "\" + $AppName + "." + $latestVersion + ".nupkg")
+    choco pack $nuspecfile -out $Basedir
     Copy-Item $nugetpack $RepoFolder
 }
